@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+header>div {
+    display: flex;
+    height: 48px;
+    gap: 15px;
+}
+
+header .yt_icon {
+    /* background-color: #fff; */
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .yt_icon:hover,
+header .mic.yt_icon {
+    background: #ffffff1a;
+}
+
+header .mic.yt_icon:hover {
+    background: #3d3d3d;
+}
+
+header .yt_icon svg {
+    height: 60% !important;
+    fill: #fff;
+}
+
+header .logo {
+    /* width: 100%; */
+    display: flex;
+    place-items: center;
+}
+
+header .logo svg {
+    /* width: 100%; */
+    height: 45% !important;
+    fill: #fff;
+}
+
+#search_box {
+    flex:  0.5 1 400px;
+}
+
+#SearchForm{
+    height: 100%;
+    display: flex;
+    flex: 1 1;
+    
+}
+
+#SearchForm input, #SearchForm button {
+    /* height: 50%; */
+    background: transparent;
+    border: .5px solid #303030;
+    /* border-radius: 15px; */
+
+}
+#SearchForm input {
+    background: #121212;
+    border-radius: 24px 0 0 24px;
+    padding: 0 20px;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    color: #999;
+}
+
+#SearchForm input:focus {
+    border-color: #4d9aff
+}
+
+#SearchForm button {
+    background: #222222;
+    border-radius:   0 24px 24px 0;
+    border-left: 0;
+    width: 80px;
+}
