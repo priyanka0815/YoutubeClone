@@ -1,6 +1,51 @@
-html, body {
+:root{
+    --highlight-bg: #ffffff1a;
+    --highlight-light-bg : #3d3d3d;
+}html, body {
     margin: 0;
     padding : 0;
     background: #0f0f0f;
     color: #fff;
+}
+#main_screen{
+    /* display: grid;
+    grid-template-columns: 80px 1fr; */
+    display: flex;
+    gap: 20px;
+}
+
+#main_screen aside, #main_screen main{
+    /* background-color: #fff; */
+}
+
+#main_screen aside {
+    width: 80px;
+}
+#main_screen aside a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+#main_screen aside .sidebar-links{
+    padding: 15px 0;    
+    border-radius: 10px;
+    margin: 5px;
+}
+#main_screen aside .sidebar-links:hover{
+    background: var(--highlight-bg);
+}
+
+
+#main_screen aside  .yt_icon {
+    width: 30px;
+    margin: 0 auto 5px;
+    fill: #fff;
+}
+
+#main_screen main{
+    flex: 1 1;
+    width: calc(100% - 100px);
+    padding-right: 10px;
+    box-sizing: border-box;
 }

@@ -23,11 +23,11 @@ header .yt_icon {
 
 header .yt_icon:hover,
 header .mic.yt_icon {
-    background: #ffffff1a;
+    background: var(--highlight-bg);
 }
 
 header .mic.yt_icon:hover {
-    background: #3d3d3d;
+    background: var(--highlight-light-bg);
 }
 
 header .yt_icon svg {

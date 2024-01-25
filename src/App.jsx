@@ -8,8 +8,7 @@ import './App.css';
 
 import {
   Header,
-  Menu,
-  Search,
+  Sidebar,
 } from './Components/inc';
 import Home from './Components/Home';
 
@@ -18,13 +17,19 @@ const App = () => {
     <BrowserRouter>
       <Header />
 
-      <Routes>
-        <Route
-          path="/"
-          index
-          element={<Home />}
-        />
-      </Routes>
+      <div id="main_screen">
+        <Sidebar />
+
+        <main>
+          <Routes>
+            <Route
+              path="/"
+              index
+              element={<Home />}
+            />
+          </Routes>
+        </main>
+      </div>
     </BrowserRouter>
   );
 };
