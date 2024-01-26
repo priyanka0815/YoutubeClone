@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { VerifiedIcon } from '../../utils/Icons';
+import {
+  calculateAge,
+  convertToInternationalNumber,
+  parseDuration,
+} from '../../utils/functions';
 
 const VideoCard = (props) => {
   return (
@@ -12,7 +17,7 @@ const VideoCard = (props) => {
             alt={props.videoTitle}
           />
           <span className="duration">
-            {props.duration}
+            {parseDuration(props.duration)}
           </span>
         </Link>
       </div>
@@ -34,7 +39,7 @@ const VideoCard = (props) => {
             </Link>
           </h4>
           <div className="channel-info">
-            <span>
+            <span className="channel-name">
               <Link
                 to={`/@${props.channelHandle}`}
               >
@@ -49,9 +54,16 @@ const VideoCard = (props) => {
           </div>
 
           <div className="extra-info">
-            <span>{props.totalViews} views</span>
+            <span>
+              {convertToInternationalNumber(
+                props.totalViews
+              )}{' '}
+              views
+            </span>
             <span>•</span>
-            <span>{props.uploadTime}</span>
+            <span>
+              {calculateAge(props.uploadTime)}
+            </span>
           </div>
         </div>
       </div>

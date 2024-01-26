@@ -9,7 +9,6 @@ import {
 } from '../../utils/Icons';
 
 const Header = () => {
-  console.log(MenuIcon);
   return (
     <header>
       <div>
