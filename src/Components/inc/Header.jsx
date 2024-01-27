@@ -1,18 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Search } from './index';
-import {
-  MenuIcon,
-  YtLogo,
-  BellIcon,
-  VideoIcon,
-} from '../../utils/Icons';
+import { Search, MenuBar } from './index';
+import { MenuIcon, YtLogo, BellIcon, VideoIcon } from '../../utils/Icons';
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <header>
       <div>
-        <div className="yt_icon">
+        <div className="yt_icon" onClick={() => setOpenMenu(!openMenu)}>
           <MenuIcon />
         </div>
         <div className="logo">
@@ -31,6 +27,8 @@ const Header = () => {
           <BellIcon />
         </div>
       </div>
+
+      <MenuBar openMenu={openMenu} setOpenMenu={setOpenMenu} />
     </header>
   );
 };
