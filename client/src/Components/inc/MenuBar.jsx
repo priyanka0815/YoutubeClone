@@ -16,7 +16,7 @@ const DisplayIconTitle = ({ icon, title }) => {
 const MenuItem = (block) => {
   return (
     <li>
-      <NavLink to={block.link} className="item">
+      <NavLink to={block.link} className="item" title={typeof block.title != 'object' && block.title}>
         <DisplayIconTitle {...block} />
       </NavLink>
     </li>
@@ -43,7 +43,7 @@ const MenuBar = (props) => {
                 {block.title && (
                   <li key={idx} className="block-title">
                     {block.link ? (
-                      <NavLink to={block.link} className="item">
+                      <NavLink to={block.link} className="item" title={typeof block.title != 'object' && block.title}>
                         <DisplayIconTitle {...block} />
                       </NavLink>
                     ) : (

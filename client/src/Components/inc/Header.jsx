@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { Search, MenuBar } from './index';
-import { MenuIcon, YtLogo, BellIcon, VideoIcon } from '../../utils/Icons';
+import { Search, MenuBar, HeaderRight } from './index';
+import { MenuIcon, YtLogo } from '../../utils/Icons';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -11,6 +11,7 @@ const Header = () => {
         <div className="yt_icon" onClick={() => setOpenMenu(!openMenu)}>
           <MenuIcon />
         </div>
+
         <div className="logo">
           <YtLogo />
         </div>
@@ -18,15 +19,7 @@ const Header = () => {
 
       <Search />
 
-      <div>
-        <div className="yt_icon">
-          <VideoIcon />
-        </div>
-
-        <div className="yt_icon">
-          <BellIcon />
-        </div>
-      </div>
+      <HeaderRight />
 
       <MenuBar openMenu={openMenu} setOpenMenu={setOpenMenu} />
     </header>

@@ -73,20 +73,13 @@ export const YtLogo = () => {
         height: '100%',
       }}
     >
-      <svg
-        viewBox="0 0 90 20"
-        preserveAspectRatio="xMidYMid meet"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
         <g>
           <path
             d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z"
             fill="#FF0000"
           ></path>
-          <path
-            d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z"
-            fill="white"
-          ></path>
+          <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="white"></path>
         </g>
         <g>
           <g>
@@ -602,15 +595,8 @@ export const YouTubePremiumIcon = () => {
           fy="7.11%"
           gradientTransform="matrix(.70653 0 0 1 .016 0)"
         >
-          <stop
-            offset="0%"
-            stopColor="#FFF"
-          ></stop>
-          <stop
-            offset="100%"
-            stopColor="#FFF"
-            stopOpacity="0"
-          ></stop>
+          <stop offset="0%" stopColor="#FFF"></stop>
+          <stop offset="100%" stopColor="#FFF" stopOpacity="0"></stop>
         </radialGradient>
       </defs>
       <g fill="none" fillRule="evenodd">
@@ -620,15 +606,8 @@ export const YouTubePremiumIcon = () => {
             fill="#F00"
             d="M22.54 7.6s-.2-1.5-.86-2.17c-.83-.87-1.75-.88-2.18-.93-3.04-.22-7.6-.2-7.6-.2s-4.56-.02-7.6.2c-.43.05-1.35.06-2.18.93-.65.67-.86 2.18-.86 2.18S1.04 9.4 1 11.18v1.66c.04 1.78.26 3.55.26 3.55s.2 1.5.86 2.18c.83.87 1.9.84 2.4.94 1.7.15 7.2.2 7.38.2 0 0 4.57 0 7.6-.22.43-.05 1.35-.06 2.18-.93.65-.67.86-2.18.86-2.18s.22-1.77.24-3.55v-1.66c-.02-1.78-.24-3.55-.24-3.55z"
           ></path>
-          <path
-            fill="#FAFAFA"
-            d="M9.68 8.9v6.18l5.84-3.1"
-          ></path>
-          <path
-            fill="#000"
-            fillOpacity=".12"
-            d="M9.68 8.88l5.13 3.48.73-.38"
-          ></path>
+          <path fill="#FAFAFA" d="M9.68 8.9v6.18l5.84-3.1"></path>
+          <path fill="#000" fillOpacity=".12" d="M9.68 8.88l5.13 3.48.73-.38"></path>
           <path
             fill="#FFF"
             fillOpacity=".2"
@@ -639,16 +618,8 @@ export const YouTubePremiumIcon = () => {
             fillOpacity=".2"
             d="M22.54 16.4s-.2 1.5-.86 2.17c-.83.87-1.75.88-2.18.93-3.04.22-7.6.2-7.6.2s-4.56.02-7.6-.2c-.43-.05-1.35-.06-2.18-.93-.65-.67-.86-2.18-.86-2.18s-.22-1.8-.26-3.57v-.1c.04 1.76.26 3.54.26 3.54s.2 1.5.86 2.17c.83.88 1.75.88 2.18.93 3.04.22 7.6.2 7.6.2s4.56.02 7.6-.2c.43-.05 1.35-.05 2.18-.93.65-.66.86-2.17.86-2.17s.22-1.78.23-3.55v.1c0 1.8-.23 3.56-.23 3.56z"
           ></path>
-          <path
-            fill="#FFF"
-            fillOpacity=".2"
-            d="M9.68 15.08v.1l5.84-3.08v-.12"
-          ></path>
-          <path
-            fill="#3E2723"
-            fillOpacity=".2"
-            d="M9.68 8.9v-.13l5.84 3.1v.1"
-          ></path>
+          <path fill="#FFF" fillOpacity=".2" d="M9.68 15.08v.1l5.84-3.08v-.12"></path>
+          <path fill="#3E2723" fillOpacity=".2" d="M9.68 8.9v-.13l5.84 3.1v.1"></path>
           <path
             fill="url(#youtube_round__a)"
             fillOpacity=".1"
@@ -685,10 +656,7 @@ export const YouTubeStudioIcon = () => {
         fill="red"
         d="m12.32 5.73 4.89 2.83c.16.09.41.31.41.67v5.67c0 .37-.25.54-.41.64l-4.89 2.83c-.16.09-.48.09-.64 0l-4.89-2.83c-.16-.09-.41-.34-.41-.64V9.24c.02-.37.25-.58.41-.68l4.89-2.83c.08-.05.2-.07.32-.07s.24.02.32.07z"
       ></path>
-      <path
-        fill="#fff"
-        d="M9.88 15.25 15.5 12 9.88 8.75z"
-      ></path>
+      <path fill="#fff" d="M9.88 15.25 15.5 12 9.88 8.75z"></path>
     </svg>
   );
 };
@@ -705,16 +673,8 @@ export const YouTubeMusicIcon = () => {
         height: '100%',
       }}
     >
-      <circle
-        fill="#FF0000"
-        cx="12"
-        cy="12"
-        r="10"
-      ></circle>
-      <polygon
-        fill="#FFFFFF"
-        points="10,14.65 10,9.35 15,12 "
-      ></polygon>
+      <circle fill="#FF0000" cx="12" cy="12" r="10"></circle>
+      <polygon fill="#FFFFFF" points="10,14.65 10,9.35 15,12 "></polygon>
       <path
         fill="#FFFFFF"
         d="M12,7c2.76,0,5,2.24,5,5s-2.24,5-5,5s-5-2.24-5-5S9.24,7,12,7 M12,6c-3.31,0-6,2.69-6,6s2.69,6,6,6s6-2.69,6-6 S15.31,6,12,6L12,6z"
@@ -831,6 +791,45 @@ export const SendFeedbackIcon = () => {
       }}
     >
       <path d="M13 14h-2v-2h2v2zm0-9h-2v6h2V5zm6-2H5v16.59l3.29-3.29.3-.3H19V3m1-1v15H9l-5 5V2h16z"></path>
+    </svg>
+  );
+};
+export const SignInUserIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      focusable="false"
+      style={{
+        pointerEvents: 'none',
+        display: 'block',
+        width: '100%',
+        height: '100%',
+      }}
+    >
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z"></path>
+    </svg>
+  );
+};
+export const SignInMenuIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      enableBackground="new 0 0 24 24"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      focusable="false"
+      style={{
+        pointerEvents: 'none',
+        display: 'block',
+        width: '100%',
+        height: '100%',
+      }}
+    >
+      <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
     </svg>
   );
 };

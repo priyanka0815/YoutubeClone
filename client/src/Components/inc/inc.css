@@ -12,7 +12,8 @@ header>div,
     gap: 15px;
 }
 
-header .yt_icon {
+header .yt_icon,
+header #account {
     /* background-color: #fff; */
     height: 100%;
     aspect-ratio: 1;
@@ -22,7 +23,7 @@ header .yt_icon {
     cursor: pointer;
 }
 
-header .yt_icon:hover,
+header .yt_icon:not(.no-hover):hover,
 header .mic.yt_icon {
     background: var(--highlight-bg);
 }
@@ -34,6 +35,39 @@ header .mic.yt_icon:hover {
 header .yt_icon svg {
     height: 60% !important;
     fill: #fff;
+}
+
+header #account {
+    justify-content: center;
+    /* width: auto; */
+    aspect-ratio: unset;
+}
+
+header #account .signin-button {
+    display: flex;
+    align-items: center;
+    color: #3ea6ff;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,.2);
+    /* background-color: #f00; */
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 0 14px 0 4px;
+}
+header #account .signin-button .yt_icon {
+    width: 40px;
+}
+header #account .signin-button .yt_icon svg{
+    fill: currentColor;
+    stroke-width: 4;
+    height: 80% !important;
+}
+
+header #account img {
+    height: 75%;
+    border-radius: inherit;
+    aspect-ratio: 1;
 }
 
 header .logo {

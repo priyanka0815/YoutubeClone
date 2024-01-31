@@ -1,16 +1,10 @@
 import React from 'react';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import {
-  Header,
-  Sidebar,
-} from './Components/inc';
+import { Header, Sidebar } from './Components/inc';
 import Home from './Components/Home';
+import Verify from './Components/Verify';
 
 const App = () => {
   return (
@@ -22,11 +16,11 @@ const App = () => {
 
         <main>
           <Routes>
-            <Route
-              path="/"
-              index
-              element={<Home />}
-            />
+            <Route path="/" index element={<Home />} />
+
+            <Route path="/account/">
+              <Route path="verify" element={<Verify />} />
+            </Route>
           </Routes>
         </main>
       </div>

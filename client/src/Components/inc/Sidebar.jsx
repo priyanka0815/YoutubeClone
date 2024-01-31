@@ -6,15 +6,11 @@ const Sidebar = () => {
   return (
     <aside>
       {sideBarLinks.map((block, idx) => (
-        <Link to={block.link} key={idx}>
+        <Link to={block.link} key={idx} title={block.title}>
           <div className="sidebar-links">
-            <div className="yt_icon">
-              {block.icon}
-            </div>
+            <div className="yt_icon">{block.icon}</div>
 
-            <div className="title">
-              {block.title}
-            </div>
+            <div className="title">{block.title}</div>
           </div>
         </Link>
       ))}
