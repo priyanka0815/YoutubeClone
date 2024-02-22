@@ -1,13 +1,13 @@
 import React from 'react';
 import './home.css';
 
-import TopCategory from './TopCategory';
-import VideoCard from './VideoCard';
+import { TopCategories } from '../../utils/siteData';
+import { TopCategory, VideoCard } from '../inc';
 
 const index = () => {
   return (
     <div id="home">
-      <TopCategory />
+      <TopCategory categories={TopCategories} />
       <div id="homegrid">
         <VideoCard
           thumbnail="1.webp"

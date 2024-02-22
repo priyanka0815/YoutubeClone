@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { Search, MenuBar, HeaderRight } from './index';
 import { MenuIcon, YtLogo } from '../../utils/Icons';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -12,9 +13,11 @@ const Header = () => {
           <MenuIcon />
         </div>
 
-        <div className="logo">
-          <YtLogo />
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <YtLogo />
+          </div>
+        </Link>
       </div>
 
       <Search />

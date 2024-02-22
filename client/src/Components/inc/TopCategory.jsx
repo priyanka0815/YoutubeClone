@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight } from '../../utils/Icons';
-import { TopCategories } from '../../utils/siteData';
 
-const TopCategory = () => {
+const TopCategory = ({ categories }) => {
   const [currCategory, setCurrCategory] = useState('all');
 
   useEffect(() => {
-    const topCategory = document.querySelector('#top_category'),
-      scrollElem = topCategory.querySelector('#searches'),
+    const topCategory = document.querySelector('.top_category'),
+      scrollElem = topCategory.querySelector('.searches'),
       arrowLeft = topCategory.querySelector('.arrow.left'),
       arrowRight = topCategory.querySelector('.arrow.right'),
       scrollAmount = 200;
@@ -50,7 +49,7 @@ const TopCategory = () => {
   }, []);
 
   return (
-    <div id="top_category">
+    <div className="top_category">
       <div
         className="arrow left"
         style={{
@@ -60,9 +59,9 @@ const TopCategory = () => {
         <ArrowLeft />
       </div>
 
-      <div id="searches">
+      <div className="searches">
         <div className="infinity-scroll">
-          {TopCategories.map((title, index) => (
+          {categories.map((title, index) => (
             <div key={index} className={title.toLowerCase() == currCategory ? 'active' : ''} title={title}>
               {title}
             </div>

@@ -1,0 +1,145 @@
+#watch_page {
+    padding: 30px 80px 0 !important;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(600px, 1fr) minmax(100px, 400px);
+    grid-template-rows: auto 1fr;
+    gap: 15px 25px;
+    
+}
+
+#watch_video {
+    height: 350px;
+    max-height: 70vh;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#watch_video  iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#watch_playlist {
+    width: 100%;
+    min-width: 300px;
+    max-width: 100%;
+    grid-row: span 2;
+}
+
+#watch_playlist .playlist {
+    margin-top: 15px;
+}
+
+#watch_playlist .playlist .videocard {
+    margin-top: 15px;
+}
+
+#watch_video_detail {
+    color: #f0f0f0;
+}
+
+#watch_video_detail a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#watch_video_detail h1{
+    font-size: 22px;
+    margin: 0;
+    line-height: 35px;
+}
+/* 
+#watch_video_detail #extra,
+#watch_video_detail #channel_info{
+    display: flex;
+    gap: 20px;
+} */
+
+
+#watch_video_detail #channel_info{
+    margin: 10px 0;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+#watch_video_detail #channel_info .channel_logo{
+    aspect-ratio: 1;
+    height: 100%;
+}
+
+#watch_video_detail #channel_info .channel_logo a{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+#watch_video_detail #channel_info .channel_logo img{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+#watch_video_detail #channel_info .channel-detail .channel-name{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* height: 100%; */
+}
+
+
+#watch_video_detail #channel_info .channel-detail .channel-name h4{
+    font-size: 20px;
+    margin: 0;
+}
+
+#watch_video_detail #channel_info .channel-detail .verify svg{
+    height: 15px !important;
+    aspect-ratio: 1;
+    fill: #aaa;
+}
+#watch_video_detail #channel_info .channel-detail .total-subscriber{
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 10px
+}
+
+#watch_video_detail #channel_info  .subscribe button{
+    background: #f1f1f1;
+    color: #0f0f0f;
+    height:40px;
+    border: 0;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#watch_page.theater {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    --aside-padding: 80px;
+}
+
+#watch_page.theater #watch_video {
+    grid-column: span 2;
+    height: 80vh;
+    max-height: 80vh;
+    overflow: visible;
+}
+
+#watch_page.theater #watch_video_detail {
+    order: 2;
+    padding-left: var(--aside-padding);
+}
+
+#watch_page.theater #watch_playlist {
+    order: 3;
+    padding-right: var(--aside-padding);
+    box-sizing: border-box;
+    grid-row: span 1;
+}
