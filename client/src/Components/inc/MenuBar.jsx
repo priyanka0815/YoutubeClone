@@ -28,7 +28,7 @@ const MenuBar = (props) => {
     <div id="menubar" className={props.openMenu ? 'active' : ''}>
       <div>
         <div className="bar-header">
-          <div className="yt_icon" onClick={() => props.setOpenMenu(!props.openMenu)}>
+          <div className="yt-icon" onClick={() => props.setOpenMenu(!props.openMenu)}>
             <MenuIcon />
           </div>
 

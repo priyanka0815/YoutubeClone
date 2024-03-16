@@ -40,7 +40,8 @@
     color: var(--white-text-color);
 }
 
-#watch_video_detail a {
+#watch_video_detail a,
+#comment_section_container a {
     text-decoration: none;
     color: inherit;
 }
@@ -226,6 +227,11 @@
     gap: 20px;
 }
 
+#comment_section_container .account img {
+    width: 40px;
+    border-radius: 50%;
+}
+
 #comment_section_container .comment_form form {
     flex: 1;
     display: flex;
@@ -301,6 +307,7 @@
 
 .comment {
     margin: 20px 0;
+    color: var(--white-text-color);
 }
 
 .comment .user-img {
@@ -308,7 +315,6 @@
     aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
-
 }
 
 .comment .user-img img {
@@ -369,9 +375,10 @@
 }
 
 .comment .comment .user-img,
-.comment .account .signin-button .yt-icon {
-    height: 30px;
-    width: 30px;
+.comment .account .signin-button .yt-icon,
+.comment .account img {
+    height: 30px !important;
+    width: 30px !important;
 }
 
 

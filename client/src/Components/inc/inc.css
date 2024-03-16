@@ -76,7 +76,7 @@ header .mic.yt-icon:hover {
     height: 100% !important;
 }
 
-.account img {
+header .account img {
     height: 75%;
     border-radius: inherit;
     aspect-ratio: 1;
