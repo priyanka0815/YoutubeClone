@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div>
-        <div className="yt_icon" onClick={() => setOpenMenu(!openMenu)}>
+        <div className="yt-icon" onClick={() => setOpenMenu(!openMenu)}>
           <MenuIcon />
         </div>
 

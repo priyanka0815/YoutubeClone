@@ -10,64 +10,96 @@ header>div,
     display: flex;
     height: 48px;
     gap: 15px;
+    fill: #fff;
 }
 
-header .yt_icon,
-header #account {
+.yt-icon,
+header .account {
     /* background-color: #fff; */
     height: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
-header .yt_icon:not(.no-hover):hover,
-header .mic.yt_icon {
+header .yt-icon:not(.no-hover):hover,
+header .mic.yt-icon {
     background: var(--highlight-bg);
 }
 
-header .mic.yt_icon:hover {
+header .mic.yt-icon:hover {
     background: var(--highlight-light-bg);
 }
 
-header .yt_icon svg {
+.yt-icon svg {
     height: 60% !important;
-    fill: #fff;
+    /* fill: #fff; */
 }
 
-header #account {
+.account {
     justify-content: center;
     /* width: auto; */
-    aspect-ratio: unset;
+    aspect-ratio: unset !important;
 }
 
-header #account .signin-button {
+.account .signin-button {
     display: flex;
+    gap: 5px;
     align-items: center;
     color: #3ea6ff;
     box-sizing: border-box;
-    border: 1px solid rgba(255,255,255,.2);
+    border: 1px solid rgba(255, 255, 255, .2);
     /* background-color: #f00; */
     font-weight: 600;
     font-size: 18px;
     border-radius: 20px;
-    padding: 0 14px 0 4px;
 }
-header #account .signin-button .yt_icon {
+
+.account.show-signin-text .signin-button {
+    padding: 0 4px;
+}
+
+.account .signin-button .yt-icon {
     width: 40px;
 }
-header #account .signin-button .yt_icon svg{
+
+.account .signin-button .yt-icon svg {
     fill: currentColor;
     stroke-width: 4;
     height: 80% !important;
 }
 
-header #account img {
+.account:not(.show-signin-text) .signin-button .yt-icon svg {
+    height: 100% !important;
+}
+
+.account img {
     height: 75%;
     border-radius: inherit;
     aspect-ratio: 1;
+}
+
+.loading {
+    border: 3px solid transparent;
+    border-top-color: var(--link-blue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: load 0.75s linear infinite;
+}
+
+@keyframes load {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 header .logo {
@@ -83,23 +115,25 @@ header .logo svg {
 }
 
 #search_box {
-    flex:  0.5 1 400px;
+    flex: 0.5 1 400px;
 }
 
-#SearchForm{
+#SearchForm {
     height: 100%;
     display: flex;
     flex: 1 1;
-    
+
 }
 
-#SearchForm input, #SearchForm button {
+#SearchForm input,
+#SearchForm button {
     /* height: 50%; */
     background: transparent;
     border: .5px solid #303030;
     /* border-radius: 15px; */
 
 }
+
 #SearchForm input {
     background: #121212;
     border-radius: 24px 0 0 24px;
@@ -116,7 +150,7 @@ header .logo svg {
 
 #SearchForm button {
     background: #222222;
-    border-radius:   0 24px 24px 0;
+    border-radius: 0 24px 24px 0;
     border-left: 0;
     width: 80px;
 }
@@ -132,7 +166,7 @@ header .logo svg {
     transition: 0.15s ease-in-out;
 }
 
-#menubar > div{
+#menubar>div {
     background: #0f0f0f;
     width: 100%;
     z-index: 100;
@@ -142,9 +176,11 @@ header .logo svg {
     flex-direction: column;
     transition: 0.15s ease-in-out;
 }
+
 #menubar.active {
     left: 0;
 }
+
 #menubar::before {
     content: '';
     height: 100%;
@@ -156,13 +192,14 @@ header .logo svg {
     background: #00000080;
     transition: 0s;
 }
+
 #menubar.active::before {
     width: 100vw;
 }
 
 #menubar .bar-header {
     box-sizing: border-box;
-    margin:  10px 20px 0;
+    margin: 10px 20px 0;
 }
 
 #menubar .menu {
@@ -183,7 +220,8 @@ header .logo svg {
     background-clip: content-box;
     background-color: transparent;
 }
-#menubar .menu:hover::-webkit-scrollbar-thumb{
+
+#menubar .menu:hover::-webkit-scrollbar-thumb {
     background-color: #717171;
 }
 
@@ -194,8 +232,9 @@ header .logo svg {
     box-sizing: border-box;
     margin: 0;
 }
+
 #menubar .menu li .item {
-    text-decoration : none;
+    text-decoration: none;
     height: 100%;
     border-radius: 8px;
     display: flex;
@@ -205,8 +244,9 @@ header .logo svg {
     padding: 0 10px 0 20px;
     font-size: 15px;
 }
+
 #menubar .menu li a:hover,
-#menubar .menu li a.active{
+#menubar .menu li a.active {
     background: #ffffff1a;
 }
 
@@ -214,12 +254,14 @@ header .logo svg {
     height: 25px;
     width: 60px;
 }
+
 #menubar .menu li svg,
 #menubar .menu li img {
     aspect-ratio: 1;
     height: 100% !important;
     width: unset !important;
 }
+
 #menubar .menu li img {
     border-radius: 50%;
 }
@@ -229,16 +271,17 @@ header .logo svg {
     padding: 10px 0;
     position: relative;
 }
+
 #menubar .menu .block:nth-of-type(1)::before {
     content: '';
     display: block;
     width: calc(100% - 10px);
     margin-left: auto;
-    height: 1px; 
+    height: 1px;
     background: #ffffff33;
     /* top: -10px; */
     margin-bottom: 10px;
-    
+
 }
 
 #menubar .menu li.block-title .title {
@@ -253,14 +296,16 @@ header .logo svg {
     overflow: hidden;
     box-sizing: border-box;
 }
-#menubar .footer-text  a{
+
+#menubar .footer-text a {
     font-size: 14px;
     font-weight: 500;
     color: #aaa;
     text-decoration: none;
     margin-right: 7px;
 }
-#menubar .copyright{
+
+#menubar .copyright {
     font-size: 12px;
     color: #717171;
     padding: 10px 20px;
@@ -336,12 +381,22 @@ header .logo svg {
     display: flex;
     gap: 15px;
 }
-.videocard.playlist-item .thumbnail{
+
+.videocard.playlist-item .thumbnail {
     width: 40%;
+    min-width: 160px;
+    max-width: 200px;
 }
-.videocard.playlist-item .info{
+
+.videocard.playlist-item .info {
     flex: 1 1;
     margin-top: 0;
+    width: 60%;
+    max-width: calc(100% - 160px - 15px);
+}
+
+.videocard.playlist-item .info .video-info {
+    width: 100%;
 }
 
 .videocard .thumbnail {
@@ -355,12 +410,13 @@ header .logo svg {
 .videocard img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .videocard .thumbnail .duration {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
     background-color: rgba(0, 0, 0, .85);
     font-size: 12px;
     color: #fff;
@@ -399,10 +455,7 @@ header .logo svg {
     line-height: 24px;
     color: #f0f0f0;
     margin-bottom: 4px;
-    display: -webkit-box;
     -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
 }
 
 .videocard a {
@@ -417,15 +470,23 @@ header .logo svg {
     fill: currentColor;
     height: 20px;
     display: inline-block;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.videocard span+span {
+    margin-left: 5px;
 }
 
 .videocard .channel-info,
 .videocard .extra-info {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 0 5px;
-    flex-wrap: wrap;
     margin: 2px 0;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    white-space: normal;
 }
 
 .videocard .channel-info .channel-name:hover {

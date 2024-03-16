@@ -2,44 +2,36 @@ export const parseDuration = (second) => {
   second = parseInt(second);
 
   if (second < 3600) {
-    let min = String(
-        parseInt(second / 60)
-      ).padStart(2, '0'),
+    let min = String(parseInt(second / 60)).padStart(2, '0'),
       sec = String(second % 60).padStart(2, '0');
 
     return `${min}:${sec}`;
   }
 
   let hr = parseInt(second / 3600),
-    min = String(
-      parseInt((second % 3600) / 60)
-    ).padStart(2, '0'),
+    min = String(parseInt((second % 3600) / 60)).padStart(2, '0'),
     sec = String(second % 60).padStart(2, '0');
 
   return `${hr}:${min}:${sec}`;
 };
 
-export const convertToInternationalNumber = (
-  number
-) => {
+export const convertToInternationalNumber = (number, singluarText = '', pluralText = '') => {
   number = String(number);
 
-  if (number < 1000) return number;
+  if (number <= 1) return `${number} ${singluarText}`;
 
-  if (number < 1000000)
-    return parseInt(number / 1000) + 'K';
+  if (number < 1000) return `${number} ${pluralText}`;
 
-  if (number < 1000000000)
-    return parseInt(number / 1000000) + 'M';
+  if (number < 1000000) return parseInt(number / 1000) + `K ${pluralText}`;
 
-  return parseInt(number / 1000000000) + 'B';
+  if (number < 1000000000) return parseInt(number / 1000000) + `M ${pluralText}`;
+
+  return parseInt(number / 1000000000) + `B ${pluralText}`;
 };
 
 export const calculateAge = (time) => {
   time = new Date(time);
-  const age = new Date(
-      new Date() - new Date(time)
-    ),
+  const age = new Date(new Date() - new Date(time)),
     year = age.getUTCFullYear() - 1970,
     month = age.getUTCMonth(),
     day = age.getUTCDate() - 1,
@@ -73,10 +65,22 @@ export const calculateAge = (time) => {
   }
 
   if (minutes) {
-    if (minutes > 1)
-      return `${minutes} minutes ago`;
+    if (minutes > 1) return `${minutes} minutes ago`;
     return `1 minute ago`;
   }
 
   return `${second} seconds ago`;
+};
+
+export const addToggle = (e, toggleSelector, toggleTextObj = ['More', 'Less']) => {
+  const elem = e.target;
+
+  const parent = elem.closest(toggleSelector);
+  if (parent?.classList.contains('toggle-active')) {
+    parent.classList.remove('toggle-active');
+    elem.innerHTML = toggleTextObj[0];
+  } else {
+    parent?.classList.add('toggle-active');
+    elem.innerHTML = toggleTextObj[1];
+  }
 };

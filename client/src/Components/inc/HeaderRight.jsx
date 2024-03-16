@@ -9,21 +9,21 @@ const HeaderRight = () => {
     <div>
       {userInfo ? (
         <>
-          <div className="yt_icon">
+          <div className="yt-icon">
             <VideoIcon />
           </div>
 
-          <div className="yt_icon">
+          <div className="yt-icon">
             <BellIcon />
           </div>
         </>
       ) : (
-        <div className="yt_icon">
+        <div className="yt-icon">
           <SignInMenuIcon />
         </div>
       )}
 
-      <AccountHandler />
+      <AccountHandler allowSigninText={true} />
     </div>
   );
 };

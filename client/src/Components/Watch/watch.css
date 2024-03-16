@@ -5,7 +5,7 @@
     grid-template-columns: minmax(600px, 1fr) minmax(100px, 400px);
     grid-template-rows: auto 1fr;
     gap: 15px 25px;
-    
+    --white-text-color: #f1f1f1;
 }
 
 #watch_video {
@@ -15,7 +15,7 @@
     border-radius: 10px;
 }
 
-#watch_video  iframe{
+#watch_video iframe {
     width: 100%;
     height: 100%;
     border: none;
@@ -37,86 +37,343 @@
 }
 
 #watch_video_detail {
-    color: #f0f0f0;
+    color: var(--white-text-color);
 }
 
-#watch_video_detail a{
+#watch_video_detail a {
     text-decoration: none;
     color: inherit;
 }
 
-#watch_video_detail h1{
+#watch_video_detail h1 {
     font-size: 22px;
     margin: 0;
     line-height: 35px;
 }
+
+#watch_video_detail #extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 20px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
 /* 
-#watch_video_detail #extra,
 #watch_video_detail #channel_info{
     display: flex;
     gap: 20px;
 } */
 
 
-#watch_video_detail #channel_info{
-    margin: 10px 0;
+#watch_video_detail #channel_info {
     height: 50px;
     align-items: center;
     display: flex;
     gap: 20px;
 }
 
-#watch_video_detail #channel_info .channel_logo{
+#watch_video_detail #channel_info .channel_logo {
     aspect-ratio: 1;
     height: 100%;
 }
 
-#watch_video_detail #channel_info .channel_logo a{
+#watch_video_detail #channel_info .channel_logo a {
     width: 100%;
     display: block;
     height: 100%;
 }
 
-#watch_video_detail #channel_info .channel_logo img{
+#watch_video_detail #channel_info .channel_logo img {
     width: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
 }
 
-#watch_video_detail #channel_info .channel-detail .channel-name{
+#watch_video_detail #channel_info .channel-detail .channel-name {
     display: flex;
     align-items: center;
     gap: 5px;
     /* height: 100%; */
 }
 
-
-#watch_video_detail #channel_info .channel-detail .channel-name h4{
+#watch_video_detail #channel_info .channel-detail .channel-name h4 {
     font-size: 20px;
     margin: 0;
 }
 
-#watch_video_detail #channel_info .channel-detail .verify svg{
+#watch_video_detail #channel_info .channel-detail .verify svg {
     height: 15px !important;
     aspect-ratio: 1;
     fill: #aaa;
 }
-#watch_video_detail #channel_info .channel-detail .total-subscriber{
+
+#watch_video_detail #channel_info .channel-detail .total-subscriber {
     color: #aaa;
     font-size: 14px;
     margin-top: 10px
 }
 
-#watch_video_detail #channel_info  .subscribe button{
+#watch_video_detail #channel_info .subscribe button {
     background: #f1f1f1;
     color: #0f0f0f;
-    height:40px;
+    height: 40px;
     border: 0;
     padding: 0 20px;
     border-radius: 20px;
     font-size: 15px;
     margin-left: 20px;
+    cursor: pointer;
 }
+
+#watch_page #video_actions {
+    --border-radius: 20px;
+}
+
+#watch_page #video_actions .btn-group {
+    display: flex;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+#watch_page #video_actions .btn-group .btn-icon {
+    border-radius: 0;
+}
+
+#watch_page #video_actions .btn-icon {
+    background: var(--highlight-bg);
+}
+
+#watch_page #video_actions .btn-icon:hover {
+    background: var(--highlight-light-bg);
+}
+
+#watch_page #video_actions>.btn-icon:last-of-type {
+    padding: 0;
+}
+
+#watch_page #video_actions .btn-group .btn-icon+.btn-icon::before {
+    content: "";
+    height: 70%;
+    width: 1.5px;
+    display: inline-block;
+    background: var(--text-highlight);
+    margin: 0 5px 0 -10px;
+}
+
+#watch_page #video_detail {
+    background: var(--highlight-bg);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#watch_page #video_detail .text-ellipsis {
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+}
+
+#watch_page #video_detail.toggle-active .text-ellipsis {
+    line-clamp: unset;
+    -webkit-line-clamp: unset;
+}
+
+#watch_page #video_detail p {
+    margin: 0;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+#watch_page #video_detail a {
+    color: var(--link-blue)
+}
+
+#watch_page #video_detail p.bold {
+    font-weight: 500;
+}
+
+#watch_page #video_detail .toggle-btn {
+    font-size: 90%;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 4px;
+}
+
+#watch_page #video_detail .toggle-btn:active {
+    background: var(--highlight-bg);
+}
+
+#comment_section_container .heading {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    color: var(--white-text-color, #fff);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#comment_section_container .heading .btn-icon {
+    height: 30px;
+    line-height: inherit;
+    --border-radius: 15px;
+}
+
+#comment_section_container .comment_form,
+#comment_section_container .comment {
+    display: flex;
+    gap: 20px;
+}
+
+#comment_section_container .comment_form form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comment_section_container .comment_form .form-field {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+#comment_section_container .comment_form .form-field input {
+    flex: 1;
+    height: 30px;
+    border: 0;
+    border-bottom: 1.5px solid var(--highlight-light-bg);
+    background: transparent;
+    outline: none;
+    color: var(--white-text-color);
+    font-size: 16px;
+}
+
+#comment_section_container .comment_form .form-field input:focus {
+    border-bottom-color: var(--white-text-color);
+}
+
+#comment_section_container .comment_form .form-field .emoji-btn,
+#comment_section_container .comment_form .form-field .btn-container button {
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#comment_section_container .comment_form .form-field .emoji-btn {
+    padding: 0;
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 1;
+    justify-content: center;
+}
+
+.emoji-picker {
+    position: absolute;
+}
+
+#comment_section_container .comment_form .form-field .emoji-btn svg {
+    height: 80%;
+}
+
+#comment_section_container .comment_form .form-field button[type=reset] {
+    color: var(--white-text-color);
+    font-weight: 600;
+}
+
+#comment_section_container .comment_form .form-field button[type=submit] {
+    background: var(--link-blue);
+    color: #000;
+}
+
+#comment_section_container .comment_form form:invalid .form-field button[type=submit] {
+    background: var(--highlight-bg);
+    color: #717171;
+}
+
+.comment {
+    margin: 20px 0;
+}
+
+.comment .user-img {
+    height: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.comment .user-img img {
+    height: 100%;
+}
+
+.comment .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comment .user-info {
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.comment .user-info .info-span {
+    color: #aaa;
+    font-size: 90%;
+    margin-left: 5px;
+}
+
+.comment .comment-text {
+    line-height: 18px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.comment .comment-action>div {
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    gap: 5px;
+}
+
+.comment .comment-action .yt-icon {
+    fill: currentColor;
+}
+
+.comment .comment-action .reply {
+    cursor: pointer;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+.comment .replies {
+    height: 30px;
+    line-height: 30px;
+    display: inline-flex;
+    width: auto;
+    color: var(--link-blue);
+    fill: currentColor;
+    border-radius: 15px;
+    padding: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.comment .comment .user-img,
+.comment .account .signin-button .yt-icon {
+    height: 30px;
+    width: 30px;
+}
+
 
 #watch_page.theater {
     padding-top: 0 !important;
@@ -142,4 +399,45 @@
     padding-right: var(--aside-padding);
     box-sizing: border-box;
     grid-row: span 1;
+}
+
+@media screen and (max-width: 1000px) {
+    #watch_page {
+        grid-template-columns: 1fr;
+        padding: 20px 50px 0 !important;
+    }
+
+    #watch_page #watch_video_detail {
+        order: 2;
+    }
+
+    #watch_page #watch_playlist {
+        order: 3;
+    }
+
+    #watch_page #comment_section_container {
+        order: 4;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    #watch_page {
+        grid-template-columns: 1fr;
+        padding: 20px 0 0 !important;
+    }
+
+    #watch_page #watch_video {
+        border-radius: 0;
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    #watch_page #watch_video_detail,
+    #watch_page #watch_playlist,
+    #watch_page #comment_section_container {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
 }

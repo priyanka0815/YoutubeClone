@@ -23,11 +23,11 @@ const VideoCard = (props) => {
         )}
 
         <div className="video-info">
-          <h4>
+          <h4 className="text-ellipsis">
             <Link to={`/watch?v=${props.videoId}`}>{props.videoTitle}</Link>
           </h4>
 
-          <div className="channel-info">
+          <div className="channel-info text-ellipsis">
             <span className="channel-name">
               <Link to={`/@${props.channelHandle}`}>{props.channelName}</Link>
             </span>
@@ -38,7 +38,7 @@ const VideoCard = (props) => {
             )}
           </div>
 
-          <div className="extra-info">
+          <div className="extra-info text-ellipsis">
             <span>{convertToInternationalNumber(props.totalViews)} views</span>
             <span>•</span>
             <span>{calculateAge(props.uploadTime)}</span>

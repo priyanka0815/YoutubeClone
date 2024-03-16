@@ -1,7 +1,7 @@
 import React from 'react';
 import { SignInUserIcon } from '../../utils/Icons';
 
-const AccountHandler = () => {
+const AccountHandler = (props = { allowSigninText: true }) => {
   const userInfo = JSON.parse(localStorage.getItem('userInfo')) ?? null;
 
   function signIn() {
@@ -34,15 +34,16 @@ const AccountHandler = () => {
   }
 
   return (
-    <div id="account">
+    <div className={`account ${props.allowSigninText ? 'show-signin-text' : ''}`}>
       {userInfo ? (
         <img src={userInfo.picture} />
       ) : (
         <div className="signin-button" onClick={signIn}>
-          <div className="yt_icon no-hover">
+          <div className="yt-icon no-hover">
             <SignInUserIcon />
           </div>
-          <div>Sign in</div>
+
+          {props.allowSigninText && <div>Sign in</div>}
         </div>
       )}
     </div>

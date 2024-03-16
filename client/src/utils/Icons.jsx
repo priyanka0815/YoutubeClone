@@ -837,274 +837,55 @@ export const LikeOutlinedIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 270 270"
-      width="270"
-      height="270"
-      preserveAspectRatio="xMidYMid meet"
-      style={{ width: '100%', height: '100%', transform: 'translate3d(0px, 0px, 0px)' }}
+      width="24"
+      height="24"
+      viewBox="0 0 104 104"
+      fill="none"
+      style={{ pointerEvents: 'none', display: 'block', width: '100%', height: '100%' }}
     >
-      <defs>
-        <clipPath id="__lottie_element_385">
-          <rect width="270" height="270" x="0" y="0"></rect>
-        </clipPath>
-        <clipPath id="__lottie_element_387">
-          <path d="M0,0 L120,0 L120,120 L0,120z"></path>
-        </clipPath>
-        <clipPath id="__lottie_element_401">
-          <path d="M0,0 L128,0 L128,128 L0,128z"></path>
-        </clipPath>
-      </defs>
-      <g clipPath="url(#__lottie_element_385)">
-        <g
-          clipPath="url(#__lottie_element_401)"
-          transform="matrix(2.7880001068115234,0,0,2.7880001068115234,-48.0780029296875,-51.58800506591797)"
-          opacity="1"
-          style={{ display: 'block' }}
+      <g clipPath="url(#clip0_68_2)">
+        <mask
+          id="mask0_68_2"
+          style={{ maskType: 'luminance' }}
+          maskUnits="userSpaceOnUse"
+          x="-98"
+          y="-98"
+          width="300"
+          height="300"
         >
-          <g
-            transform="matrix(0.4056888222694397,0.10870399326086044,-0.10870399326086044,0.4056888222694397,63.819969177246094,55.32201385498047)"
-            opacity="1"
-            style={{ display: 'block' }}
+          <path d="M202 -98H-98V202H202V-98Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_68_2)">
+          <mask
+            id="mask1_68_2"
+            style={{ maskType: 'luminance' }}
+            maskUnits="userSpaceOnUse"
+            x="-21"
+            y="-23"
+            width="146"
+            height="146"
           >
-            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="miter"
-                fillOpacity="0"
-                strokeMiterlimit="4"
-                stroke="rgb(255,78,69)"
-                strokeOpacity="1"
-                strokeWidth="5"
-                d="M0 0"
-              ></path>
-            </g>
-          </g>
-          <g
-            transform="matrix(0.6260144710540771,0.13306348025798798,-0.13306348025798798,0.6260144710540771,63.75,70.5)"
-            opacity="1"
-            style={{ display: 'block' }}
-          >
-            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="miter"
-                fillOpacity="0"
-                strokeMiterlimit="4"
-                stroke="rgb(195,252,193)"
-                strokeOpacity="1"
-                strokeWidth="3"
-                d="M0 0"
-              ></path>
-            </g>
-          </g>
-          <g style={{ display: 'none' }}>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-          </g>
-          <g
-            transform="matrix(0.6156615018844604,0.7880107760429382,-0.7880107760429382,0.6156615018844604,60.8013916015625,70.60517120361328)"
-            opacity="1"
-            style={{ display: 'block' }}
-          >
-            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="miter"
-                fillOpacity="0"
-                strokeMiterlimit="4"
-                stroke="rgb(195,252,193)"
-                strokeOpacity="1"
-                strokeWidth="4"
-                d="M0 0"
-              ></path>
-            </g>
-          </g>
-          <g
-            transform="matrix(-0.3420201539993286,0.9396926164627075,-0.9396926164627075,-0.3420201539993286,57.86277770996094,63.6497688293457)"
-            opacity="1"
-            style={{ display: 'block' }}
-          >
-            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="miter"
-                fillOpacity="0"
-                strokeMiterlimit="4"
-                stroke="rgb(255,78,69)"
-                strokeOpacity="1"
-                strokeWidth="4"
-                d="M0 0"
-              ></path>
-            </g>
-          </g>
-          <g style={{ display: 'none' }}>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-          </g>
-          <g
-            transform="matrix(-0.882947564125061,-0.4694715738296509,0.4694715738296509,-0.882947564125061,54.99470138549805,66.93231201171875)"
-            opacity="1"
-            style={{ display: 'block' }}
-          >
-            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="miter"
-                fillOpacity="0"
-                strokeMiterlimit="4"
-                stroke="rgb(180,123,255)"
-                strokeOpacity="1"
-                strokeWidth="4"
-                d="M0 0"
-              ></path>
-            </g>
-          </g>
-          <g
-            transform="matrix(-0.24192190170288086,-0.9702957272529602,0.9702957272529602,-0.24192190170288086,65.31019592285156,68.61397552490234)"
-            opacity="1"
-            style={{ display: 'block' }}
-          >
-            <g opacity="1" transform="matrix(1,0,0,1,-1,0)">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="miter"
-                fillOpacity="0"
-                strokeMiterlimit="4"
-                stroke="rgb(195,252,193)"
-                strokeOpacity="1"
-                strokeWidth="3"
-                d="M0 0"
-              ></path>
-            </g>
-          </g>
-          <g style={{ display: 'none' }}>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-            <g>
-              <path></path>
-            </g>
-          </g>
-          <g
-            transform="matrix(0.8660253882408142,-0.5,0.5,0.8660253882408142,59.2075309753418,70.43893432617188)"
-            opacity="1"
-            style={{ display: 'block' }}
-          >
-            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="miter"
-                fillOpacity="0"
-                strokeMiterlimit="4"
-                stroke="rgb(229,229,44)"
-                strokeOpacity="1"
-                strokeWidth="6"
-                d="M0 0"
-              ></path>
-            </g>
-          </g>
-        </g>
-        <g
-          clipPath="url(#__lottie_element_387)"
-          transform="matrix(1.0880000591278076,0,0,1.0880000591278076,69.95299530029297,67.9433822631836)"
-          opacity="1"
-          style={{ display: 'block' }}
-        >
-          <g transform="matrix(1,0,0,1,60,60)" opacity="1" style={{ display: 'block' }}>
+            <path d="M-20.2744 -22.5073H124.792V122.559H-20.2744V-22.5073Z" fill="white" />
+          </mask>
+          <g mask="url(#mask1_68_2)">
             <path
-              fill="rgb(255,255,255)"
-              fillOpacity="1"
-              d=" M25.025999069213867,-4.00600004196167 C25.025999069213867,-4.00600004196167 5.992000102996826,-3.996999979019165 5.992000102996826,-3.996999979019165 C5.992000102996826,-3.996999979019165 11.012999534606934,-22.983999252319336 11.012999534606934,-22.983999252319336 C12.230999946594238,-26.90399932861328 13,-31.94300079345703 8.994000434875488,-31.981000900268555 C7,-32 5,-32 4.021999835968018,-31.007999420166016 C4.021999835968018,-31.007999420166016 -19.993000030517578,-5.03000020980835 -19.993000030517578,-5.03000020980835 C-19.993000030517578,-5.03000020980835 -20.027999877929688,32.025001525878906 -20.027999877929688,32.025001525878906 C-20.027999877929688,32.025001525878906 20.97599983215332,31.986000061035156 20.97599983215332,31.986000061035156 C25.010000228881836,31.986000061035156 26.198999404907227,29.562000274658203 26.99799919128418,25.985000610351562 C26.99799919128418,25.985000610351562 31.972000122070312,4.026000022888184 31.972000122070312,4.026000022888184 C33,-0.6930000185966492 30.392000198364258,-4.00600004196167 25.025999069213867,-4.00600004196167z"
-            ></path>
+              d="M82.5125 45.1833L59.5025 45.1942L65.5724 22.241C67.0448 17.5022 67.9744 11.4106 63.1316 11.3646C60.7211 11.3417 58.3033 11.3417 57.121 12.5409L28.0896 43.9454L28.0472 88.7408L77.6165 88.6936C82.4932 88.6936 83.9305 85.7633 84.8965 81.4391L90.9095 54.8931C92.1522 49.1883 88.9994 45.1833 82.5125 45.1833Z"
+              stroke="white"
+              strokeWidth="4.352"
+            />
             <path
-              strokeLinecap="butt"
-              strokeLinejoin="miter"
-              fillOpacity="0"
-              strokeMiterlimit="4"
-              stroke="rgb(255,255,255)"
-              strokeOpacity="1"
-              strokeWidth="4"
-              d=" M25.025999069213867,-4.00600004196167 C25.025999069213867,-4.00600004196167 5.992000102996826,-3.996999979019165 5.992000102996826,-3.996999979019165 C5.992000102996826,-3.996999979019165 11.012999534606934,-22.983999252319336 11.012999534606934,-22.983999252319336 C12.230999946594238,-26.90399932861328 13,-31.94300079345703 8.994000434875488,-31.981000900268555 C7,-32 5,-32 4.021999835968018,-31.007999420166016 C4.021999835968018,-31.007999420166016 -19.993000030517578,-5.03000020980835 -19.993000030517578,-5.03000020980835 C-19.993000030517578,-5.03000020980835 -20.027999877929688,32.025001525878906 -20.027999877929688,32.025001525878906 C-20.027999877929688,32.025001525878906 20.97599983215332,31.986000061035156 20.97599983215332,31.986000061035156 C25.010000228881836,31.986000061035156 26.198999404907227,29.562000274658203 26.99799919128418,25.985000610351562 C26.99799919128418,25.985000610351562 31.972000122070312,4.026000022888184 31.972000122070312,4.026000022888184 C33,-0.6930000185966492 30.392000198364258,-4.00600004196167 25.025999069213867,-4.00600004196167z"
-            ></path>
-          </g>
-          <g style={{ display: 'none' }}>
-            <path strokeLinecap="butt" strokeLinejoin="miter" fillOpacity="0" strokeMiterlimit="4"></path>
-          </g>
-          <g transform="matrix(1,0,0,1,60,60)" opacity="1" style={{ display: 'block' }}>
-            <path
-              fill="rgb(255,255,255)"
-              fillOpacity="1"
-              d=" M-27.993000030517578,-4.015999794006348 C-27.993000030517578,-4.015999794006348 -36.02799987792969,-3.996999979019165 -36.02799987792969,-3.996999979019165 C-36.02799987792969,-3.996999979019165 -36,31.9950008392334 -36,31.9950008392334 C-36,31.9950008392334 -28.027999877929688,31.976999282836914 -28.027999877929688,31.976999282836914 C-28.027999877929688,31.976999282836914 -27.993000030517578,-4.015999794006348 -27.993000030517578,-4.015999794006348z"
-            ></path>
-            <path
-              strokeLinecap="butt"
-              strokeLinejoin="miter"
-              fillOpacity="0"
-              strokeMiterlimit="4"
-              stroke="rgb(255,255,255)"
-              strokeOpacity="1"
-              strokeWidth="4"
-              d=" M-27.993000030517578,-4.015999794006348 C-27.993000030517578,-4.015999794006348 -36.02799987792969,-3.996999979019165 -36.02799987792969,-3.996999979019165 C-36.02799987792969,-3.996999979019165 -36,31.9950008392334 -36,31.9950008392334 C-36,31.9950008392334 -28.027999877929688,31.976999282836914 -28.027999877929688,31.976999282836914 C-28.027999877929688,31.976999282836914 -27.993000030517578,-4.015999794006348 -27.993000030517578,-4.015999794006348z"
-            ></path>
-          </g>
-          <g style={{ display: 'none' }}>
-            <path strokeLinecap="butt" strokeLinejoin="miter" fillOpacity="0" strokeMiterlimit="4"></path>
+              d="M28.098 45.1543L8.7135 45.1942L8.73647 88.7021L28.0448 88.7384L28.098 45.1543Z"
+              stroke="white"
+              strokeWidth="4.352"
+            />
           </g>
         </g>
       </g>
+      <defs>
+        <clipPath id="clip0_68_2">
+          <rect width="104" height="104" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };
@@ -1164,6 +945,64 @@ export const SaveVideoIcon = () => {
       style={{ pointerEvents: 'none', display: 'block', width: '100%', height: '100%' }}
     >
       <path d="M22 13h-4v4h-2v-4h-4v-2h4V7h2v4h4v2zm-8-6H2v1h12V7zM2 12h8v-1H2v1zm0 4h8v-1H2v1z"></path>
+    </svg>
+  );
+};
+
+export const SortIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      enableBackground="new 0 0 24 24"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      focusable="false"
+      style={{ pointerEvents: 'none', display: 'inherit', width: '100%', height: '100%' }}
+    >
+      <path d="M21 6H3V5h18v1zm-6 5H3v1h12v-1zm-6 6H3v1h6v-1z"></path>
+    </svg>
+  );
+};
+
+export const EmojiIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      enableBackground="new 0 0 24 24"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      focusable="false"
+      style={{ pointerEvents: 'none', display: 'inherit' }}
+    >
+      <path d="M15.83 15c-.52 1.38-2.19 2-3.79 2-1.59 0-3.28-.62-3.85-2h7.64m.69-1H7.49c-.27 0-.49.22-.46.47C7.34 16.83 9.7 18 12.05 18c2.35 0 4.69-1.18 4.93-3.54.03-.25-.2-.46-.46-.46zM12 3c4.96 0 9 4.04 9 9s-4.04 9-9 9-9-4.04-9-9 4.04-9 9-9m0-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM6.94 9.73C7.19 9.25 7.72 9 8.5 9c.75 0 1.28.25 1.57.75.14.24.45.32.68.18.24-.14.32-.44.18-.68C10.6 8.68 9.91 8 8.5 8c-1.48 0-2.15.69-2.44 1.27-.13.25-.03.55.21.67.07.04.15.06.23.06.18 0 .36-.1.44-.27zm7 0c.25-.48.78-.73 1.56-.73.75 0 1.28.25 1.57.75.14.24.45.32.68.18.24-.14.32-.44.18-.68C17.6 8.68 16.91 8 15.5 8c-1.48 0-2.15.69-2.44 1.27-.13.25-.03.55.21.67.07.04.15.06.23.06.18 0 .36-.1.44-.27z"></path>
+    </svg>
+  );
+};
+
+export const CaretDown = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      focusable="false"
+      style={{ pointerEvents: 'none', display: 'inherit' }}
+    >
+      <path d="M7 10l5 5 5-5z"></path>
+    </svg>
+  );
+};
+
+export const CaretUp = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      focusable="false"
+      style={{ pointerEvents: 'none', display: 'inherit' }}
+    >
+      <path d="M7 14l5-5 5 5z"></path>
     </svg>
   );
 };
