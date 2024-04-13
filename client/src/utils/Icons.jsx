@@ -7,10 +7,10 @@ export const MenuIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path>
@@ -27,10 +27,10 @@ export const MicIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path>
@@ -48,10 +48,10 @@ export const SearchIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
@@ -67,10 +67,10 @@ export const YtLogo = () => {
       viewBox="0 0 90 20"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
@@ -107,10 +107,10 @@ export const BellIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path>
@@ -124,10 +124,10 @@ export const VideoIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       height="24"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
       viewBox="0 0 24 24"
       width="24"
@@ -147,10 +147,10 @@ export const HomeIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <g>
@@ -168,10 +168,10 @@ export const ShortsIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path>
@@ -188,10 +188,10 @@ export const SubscriptionIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path>
@@ -208,10 +208,10 @@ export const YouIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path>
@@ -228,10 +228,10 @@ export const ArrowLeft = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M14.96 18.96 8 12l6.96-6.96.71.71L9.41 12l6.25 6.25-.7.71z"></path>
@@ -248,10 +248,10 @@ export const ArrowRight = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
@@ -268,10 +268,10 @@ export const VerifiedIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path>
@@ -285,10 +285,10 @@ export const YourChannelIcon = () => {
       viewBox="0 0 24 24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M3,3v18h18V3H3z M4.99,20c0.39-2.62,2.38-5.1,7.01-5.1s6.62,2.48,7.01,5.1H4.99z M9,10c0-1.65,1.35-3,3-3s3,1.35,3,3 c0,1.65-1.35,3-3,3S9,11.65,9,10z M12.72,13.93C14.58,13.59,16,11.96,16,10c0-2.21-1.79-4-4-4c-2.21,0-4,1.79-4,4 c0,1.96,1.42,3.59,3.28,3.93c-4.42,0.25-6.84,2.8-7.28,6V4h16v15.93C19.56,16.73,17.14,14.18,12.72,13.93z"></path>
@@ -301,10 +301,10 @@ export const HistoryIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       height="24"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
       viewBox="0 0 24 24"
       width="24"
@@ -326,10 +326,10 @@ export const YourVideosIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z"></path>
@@ -345,10 +345,10 @@ export const WatchLaterIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M14.97 16.95 10 13.87V7h2v5.76l4.03 2.49-1.06 1.7zM12 3c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path>
@@ -365,10 +365,10 @@ export const TrendingIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M19 3.87v9.77C19 17.7 15.86 21 12 21s-7-3.3-7-7.37v-.13c0-1.06.22-2.13.62-3.09.5-1.19 1.29-2.21 2.27-2.97.85-.66 1.83-1.14 2.87-1.65.39-.19.77-.38 1.15-.58.36-.19.72-.38 1.08-.56v3.22l1.55-1.04L19 3.87M20 2l-6 4V3c-.85.44-1.7.88-2.55 1.33-1.41.74-2.9 1.34-4.17 2.32-1.13.87-2.02 2.05-2.58 3.37-.46 1.09-.7 2.29-.7 3.48v.14C4 18.26 7.58 22 12 22s8-3.74 8-8.36V2zM9.45 12.89 14 10v5.7c0 1.82-1.34 3.3-3 3.3s-3-1.47-3-3.3c0-1.19.58-2.23 1.45-2.81z"></path>
@@ -384,10 +384,10 @@ export const ShoppingIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M7 8c0 2.76 2.24 5 5 5s5-2.24 5-5h-1c0 2.21-1.79 4-4 4s-4-1.79-4-4H7zm9.9-2c-.46-2.28-2.48-4-4.9-4S7.56 3.72 7.1 6H4v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6h-3.1zM12 3c1.86 0 3.43 1.27 3.87 3H8.13c.44-1.73 2.01-3 3.87-3zm7 17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V7h14v13z"></path>
@@ -404,10 +404,10 @@ export const MusicIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M12 4v9.38c-.73-.84-1.8-1.38-3-1.38-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V8h6V4h-7zM9 19c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm9-12h-5V5h5v2z"></path>
@@ -423,10 +423,10 @@ export const MoviesIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="m22.01 4.91-.5-2.96L1.64 5.19 2 8v13h20V8H3.06l18.95-3.09zM5 9l1 3h3L8 9h2l1 3h3l-1-3h2l1 3h3l-1-3h3v11H3V9h2z"></path>
@@ -443,10 +443,10 @@ export const LiveIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <g>
@@ -465,10 +465,10 @@ export const GamingIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M10 12H8v2H6v-2H4v-2h2V8h2v2h2v2zm7 .5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5.67 1.5 1.5 1.5 1.5-.67 1.5-1.5zm3-3c0-.83-.67-1.5-1.5-1.5S17 8.67 17 9.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5zm-3.03-4.35-4.5 2.53-.49.27-.49-.27-4.5-2.53L3 7.39v6.43l8.98 5.04 8.98-5.04V7.39l-3.99-2.24m0-1.15 4.99 2.8v7.6L11.98 20 2 14.4V6.8L6.99 4l4.99 2.8L16.97 4z"></path>
@@ -485,10 +485,10 @@ export const NewsIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M11 11v6H7v-6h4m1-1H6v8h6v-8zM3 3.03V21h14l4-4V3.03M20 4v11.99l-.01.01H16v3.99l-.01.01H4V4h16zm-2 4H6V6h12v2zm0 7h-5v-2h5v2zm0-3h-5v-2h5v2z"></path>
@@ -504,10 +504,10 @@ export const SportsIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M18 5V2H6v3H3v6l3.23 1.61c.7 2.5 2.97 4.34 5.69 4.38L8 19v3h8v-3l-3.92-2.01c2.72-.04 4.99-1.88 5.69-4.38L21 11V5h-3zM6 11.38l-2-1V6h2v5.38zM15 21H9v-1.39l3-1.54 3 1.54V21zm2-10c0 2.76-2.24 5-5 5s-5-2.24-5-5V3h10v8zm3-.62-2 1V6h2v4.38z"></path>
@@ -524,10 +524,10 @@ export const LearningIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M16 21h-2.28c-.35.6-.98 1-1.72 1s-1.38-.4-1.72-1H8v-1h8v1zm4-11c0 2.96-1.61 5.54-4 6.92V19H8v-2.08C5.61 15.54 4 12.96 4 10c0-4.42 3.58-8 8-8s8 3.58 8 8zm-5 8v-1.66l.5-.29C17.66 14.8 19 12.48 19 10c0-3.86-3.14-7-7-7s-7 3.14-7 7c0 2.48 1.34 4.8 3.5 6.06l.5.28V18h6z"></path>
@@ -540,10 +540,10 @@ export const FashionAndBeautyIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       height="24"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
       viewBox="0 0 24 24"
       width="24"
@@ -563,10 +563,10 @@ export const PodcastsIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M6 12c0-3.31 2.69-6 6-6s6 2.69 6 6c0 1.66-.67 3.16-1.77 4.25l-.71-.71C16.44 14.63 17 13.38 17 12c0-2.76-2.24-5-5-5s-5 2.24-5 5c0 1.38.56 2.63 1.47 3.54l-.71.71C6.67 15.16 6 13.66 6 12zm8 0c0-1.1-.9-2-2-2s-2 .9-2 2c0 .74.4 1.38 1 1.72V22h2v-8.28c.6-.34 1-.98 1-1.72zm-9.06 7.08.71-.71C4.01 16.74 3 14.49 3 12c0-4.96 4.04-9 9-9s9 4.04 9 9c0 2.49-1.01 4.74-2.65 6.37l.71.71C20.88 17.27 22 14.77 22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 2.77 1.12 5.27 2.94 7.08z"></path>
@@ -580,10 +580,10 @@ export const YouTubePremiumIcon = () => {
       viewBox="0 0 24 24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <defs>
@@ -638,10 +638,10 @@ export const YouTubeStudioIcon = () => {
       viewBox="0 0 24 24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path
@@ -667,10 +667,10 @@ export const YouTubeMusicIcon = () => {
       viewBox="0 0 24 24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <circle fill="#FF0000" cx="12" cy="12" r="10"></circle>
@@ -689,10 +689,10 @@ export const YouTubeKidsIcon = () => {
       viewBox="0 0 24 24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path
@@ -724,10 +724,10 @@ export const SettingIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M12 9.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-1c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zM13.22 3l.55 2.2.13.51.5.18c.61.23 1.19.56 1.72.98l.4.32.5-.14 2.17-.62 1.22 2.11-1.63 1.59-.37.36.08.51c.05.32.08.64.08.98s-.03.66-.08.98l-.08.51.37.36 1.63 1.59-1.22 2.11-2.17-.62-.5-.14-.4.32c-.53.43-1.11.76-1.72.98l-.5.18-.13.51-.55 2.24h-2.44l-.55-2.2-.13-.51-.5-.18c-.6-.23-1.18-.56-1.72-.99l-.4-.32-.5.14-2.17.62-1.21-2.12 1.63-1.59.37-.36-.08-.51c-.05-.32-.08-.65-.08-.98s.03-.66.08-.98l.08-.51-.37-.36L3.6 8.56l1.22-2.11 2.17.62.5.14.4-.32c.53-.44 1.11-.77 1.72-.99l.5-.18.13-.51.54-2.21h2.44M14 2h-4l-.74 2.96c-.73.27-1.4.66-2 1.14l-2.92-.83-2 3.46 2.19 2.13c-.06.37-.09.75-.09 1.14s.03.77.09 1.14l-2.19 2.13 2 3.46 2.92-.83c.6.48 1.27.87 2 1.14L10 22h4l.74-2.96c.73-.27 1.4-.66 2-1.14l2.92.83 2-3.46-2.19-2.13c.06-.37.09-.75.09-1.14s-.03-.77-.09-1.14l2.19-2.13-2-3.46-2.92.83c-.6-.48-1.27-.87-2-1.14L14 2z"></path>
@@ -744,10 +744,10 @@ export const ReportHistoryIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="m13.18 4 .24 1.2.16.8H19v7h-5.18l-.24-1.2-.16-.8H6V4h7.18M14 3H5v18h1v-9h6.6l.4 2h7V5h-5.6L14 3z"></path>
@@ -764,10 +764,10 @@ export const HelpIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M15.36 9.96c0 1.09-.67 1.67-1.31 2.24-.53.47-1.03.9-1.16 1.6l-.04.2H11.1l.03-.28c.14-1.17.8-1.76 1.47-2.27.52-.4 1.01-.77 1.01-1.49 0-.51-.23-.97-.63-1.29-.4-.31-.92-.42-1.42-.29-.59.15-1.05.67-1.19 1.34l-.05.28H8.57l.06-.42c.2-1.4 1.15-2.53 2.42-2.87 1.05-.29 2.14-.08 2.98.57.85.64 1.33 1.62 1.33 2.68zM12 18c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0-15c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9m0-1c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path>
@@ -784,10 +784,10 @@ export const SendFeedbackIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M13 14h-2v-2h2v2zm0-9h-2v6h2V5zm6-2H5v16.59l3.29-3.29.3-.3H19V3m1-1v15H9l-5 5V2h16z"></path>
@@ -803,10 +803,10 @@ export const SignInUserIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 1c4.96 0 9 4.04 9 9 0 1.42-.34 2.76-.93 3.96-1.53-1.72-3.98-2.89-7.38-3.03A3.996 3.996 0 0016 9c0-2.21-1.79-4-4-4S8 6.79 8 9c0 1.97 1.43 3.6 3.31 3.93-3.4.14-5.85 1.31-7.38 3.03C3.34 14.76 3 13.42 3 12c0-4.96 4.04-9 9-9zM9 9c0-1.65 1.35-3 3-3s3 1.35 3 3-1.35 3-3 3-3-1.35-3-3zm3 12c-3.16 0-5.94-1.64-7.55-4.12C6.01 14.93 8.61 13.9 12 13.9c3.39 0 5.99 1.03 7.55 2.98C17.94 19.36 15.16 21 12 21z"></path>
@@ -823,10 +823,10 @@ export const SignInMenuIcon = () => {
       width="24"
       focusable="false"
       style={{
-        pointerEvents: 'none',
-        display: 'block',
-        width: '100%',
-        height: '100%',
+        pointerEvents: "none",
+        display: "block",
+        width: "100%",
+        height: "100%",
       }}
     >
       <path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path>
@@ -841,12 +841,12 @@ export const LikeOutlinedIcon = () => {
       height="24"
       viewBox="0 0 104 104"
       fill="none"
-      style={{ pointerEvents: 'none', display: 'block', width: '100%', height: '100%' }}
+      style={{ pointerEvents: "none", display: "block", width: "100%", height: "100%" }}
     >
       <g clipPath="url(#clip0_68_2)">
         <mask
           id="mask0_68_2"
-          style={{ maskType: 'luminance' }}
+          style={{ maskType: "luminance" }}
           maskUnits="userSpaceOnUse"
           x="-98"
           y="-98"
@@ -858,7 +858,7 @@ export const LikeOutlinedIcon = () => {
         <g mask="url(#mask0_68_2)">
           <mask
             id="mask1_68_2"
-            style={{ maskType: 'luminance' }}
+            style={{ maskType: "luminance" }}
             maskUnits="userSpaceOnUse"
             x="-21"
             y="-23"
@@ -889,6 +889,445 @@ export const LikeOutlinedIcon = () => {
     </svg>
   );
 };
+
+export const LikeFilledIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 270 270"
+      width="270"
+      height="270"
+      preserveAspectRatio="xMidYMid meet"
+      style={{ width: "100%", height: "100%", transform: "translate3d(0px, 0px, 0px)" }}
+    >
+      <defs>
+        <clipPath id="__lottie_element_199">
+          <rect width="270" height="270" x="0" y="0"></rect>
+        </clipPath>
+        <clipPath id="__lottie_element_201">
+          <path d="M0,0 L120,0 L120,120 L0,120z"></path>
+        </clipPath>
+        <clipPath id="__lottie_element_215">
+          <path d="M0,0 L128,0 L128,128 L0,128z"></path>
+        </clipPath>
+      </defs>
+      <g clipPath="url(#__lottie_element_199)">
+        <g
+          clipPath="url(#__lottie_element_215)"
+          style={{ display: "block" }}
+          transform="matrix(2.7880001068115234,0,0,2.7880001068115234,-48.0780029296875,-51.58800506591797)"
+          opacity="1"
+        >
+          <g
+            transform="matrix(0.4056888222694397,0.10870399326086044,-0.10870399326086044,0.4056888222694397,63.819969177246094,55.32201385498047)"
+            opacity="1"
+            style={{ display: "block" }}
+          >
+            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="miter"
+                fillOpacity="0"
+                strokeMiterlimit="4"
+                stroke="rgb(255,78,69)"
+                strokeOpacity="1"
+                strokeWidth="5"
+                d="M0 0"
+              ></path>
+            </g>
+          </g>
+          <g
+            transform="matrix(0.6260144710540771,0.13306348025798798,-0.13306348025798798,0.6260144710540771,63.75,70.5)"
+            opacity="1"
+            style={{ display: "block" }}
+          >
+            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="miter"
+                fillOpacity="0"
+                strokeMiterlimit="4"
+                stroke="rgb(195,252,193)"
+                strokeOpacity="1"
+                strokeWidth="3"
+                d="M0 0"
+              ></path>
+            </g>
+          </g>
+          <g transform="matrix(1,0,0,1,91,46.25)" opacity="0.025087799208107952" style={{ display: "none" }}>
+            <g
+              opacity="1"
+              transform="matrix(0.17499782145023346,-0.30310511589050293,0.30310511589050293,0.17499782145023346,-5.455892086029053,-3.14996075630188)"
+            >
+              <path
+                fill="rgb(180,123,255)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.17499782145023346,-0.30310511589050293,0.30310511589050293,-0.17499782145023346,-5.455892086029053,3.14996075630188)"
+            >
+              <path
+                fill="rgb(180,123,255)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g opacity="1" transform="matrix(-0.3499956429004669,0,0,-0.3499956429004669,0,6.29992151260376)">
+              <path
+                fill="rgb(180,123,255)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.17499782145023346,0.30310511589050293,-0.30310511589050293,-0.17499782145023346,5.455892086029053,3.14996075630188)"
+            >
+              <path
+                fill="rgb(180,123,255)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(0.17499782145023346,0.30310511589050293,-0.30310511589050293,0.17499782145023346,5.455892086029053,-3.14996075630188)"
+            >
+              <path
+                fill="rgb(180,123,255)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g opacity="1" transform="matrix(0.3499956429004669,0,0,0.3499956429004669,0,-6.29992151260376)">
+              <path
+                fill="rgb(180,123,255)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+          </g>
+          <g
+            transform="matrix(0.6156615018844604,0.7880107760429382,-0.7880107760429382,0.6156615018844604,60.8013916015625,70.60517120361328)"
+            opacity="1"
+            style={{ display: "block" }}
+          >
+            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="miter"
+                fillOpacity="0"
+                strokeMiterlimit="4"
+                stroke="rgb(195,252,193)"
+                strokeOpacity="1"
+                strokeWidth="4"
+                d="M0 0"
+              ></path>
+            </g>
+          </g>
+          <g
+            transform="matrix(-0.3420201539993286,0.9396926164627075,-0.9396926164627075,-0.3420201539993286,57.86277770996094,63.6497688293457)"
+            opacity="1"
+            style={{ display: "block" }}
+          >
+            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="miter"
+                fillOpacity="0"
+                strokeMiterlimit="4"
+                stroke="rgb(255,78,69)"
+                strokeOpacity="1"
+                strokeWidth="4"
+                d="M0 0"
+              ></path>
+            </g>
+          </g>
+          <g transform="matrix(1,0,0,1,39.875,92.75)" opacity="0.00042832737880331705" style={{ display: "none" }}>
+            <g
+              opacity="1"
+              transform="matrix(0.17499999701976776,-0.30310890078544617,0.30310890078544617,0.17499999701976776,-5.455959796905518,-3.1499998569488525)"
+            >
+              <path
+                fill="rgb(195,252,193)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.17499999701976776,-0.30310890078544617,0.30310890078544617,-0.17499999701976776,-5.455959796905518,3.1499998569488525)"
+            >
+              <path
+                fill="rgb(195,252,193)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g opacity="1" transform="matrix(-0.3499999940395355,0,0,-0.3499999940395355,0,6.299999713897705)">
+              <path
+                fill="rgb(195,252,193)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.17499999701976776,0.30310890078544617,-0.30310890078544617,-0.17499999701976776,5.455959796905518,3.1499998569488525)"
+            >
+              <path
+                fill="rgb(195,252,193)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(0.17499999701976776,0.30310890078544617,-0.30310890078544617,0.17499999701976776,5.455959796905518,-3.1499998569488525)"
+            >
+              <path
+                fill="rgb(195,252,193)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g opacity="1" transform="matrix(0.3499999940395355,0,0,0.3499999940395355,0,-6.299999713897705)">
+              <path
+                fill="rgb(195,252,193)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+          </g>
+          <g
+            transform="matrix(-0.882947564125061,-0.4694715738296509,0.4694715738296509,-0.882947564125061,54.99470138549805,66.93231201171875)"
+            opacity="1"
+            style={{ display: "block" }}
+          >
+            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="miter"
+                fillOpacity="0"
+                strokeMiterlimit="4"
+                stroke="rgb(180,123,255)"
+                strokeOpacity="1"
+                strokeWidth="4"
+                d="M0 0"
+              ></path>
+            </g>
+          </g>
+          <g
+            transform="matrix(-0.24192190170288086,-0.9702957272529602,0.9702957272529602,-0.24192190170288086,65.31019592285156,68.61397552490234)"
+            opacity="1"
+            style={{ display: "block" }}
+          >
+            <g opacity="1" transform="matrix(1,0,0,1,-1,0)">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="miter"
+                fillOpacity="0"
+                strokeMiterlimit="4"
+                stroke="rgb(195,252,193)"
+                strokeOpacity="1"
+                strokeWidth="3"
+                d="M0 0"
+              ></path>
+            </g>
+          </g>
+          <g
+            transform="matrix(1,0,0,1,36.0620002746582,47.1879997253418)"
+            opacity="0.0003282390004440572"
+            style={{ display: "none" }}
+          >
+            <g
+              opacity="1"
+              transform="matrix(0.2681110203266144,-0.22497184574604034,0.22497184574604034,0.2681110203266144,-4.499436855316162,-5.362220287322998)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(0.06077583134174347,-0.3446768522262573,0.3446768522262573,0.06077583134174347,-6.893537521362305,-1.2155165672302246)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.17499703168869019,-0.3031037449836731,0.3031037449836731,-0.17499703168869019,-6.062075138092041,3.4999406337738037)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.32888683676719666,-0.11970502138137817,0.11970502138137817,-0.32888683676719666,-2.3941004276275635,6.577736854553223)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.32888683676719666,0.11970502138137817,-0.11970502138137817,-0.32888683676719666,2.3941004276275635,6.577736854553223)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(-0.17499703168869019,0.3031037449836731,-0.3031037449836731,-0.17499703168869019,6.062075138092041,3.4999406337738037)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(0.06077583134174347,0.3446768522262573,-0.3446768522262573,0.06077583134174347,6.893537521362305,-1.2155165672302246)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g
+              opacity="1"
+              transform="matrix(0.2681110203266144,0.22497184574604034,-0.22497184574604034,0.2681110203266144,4.499436855316162,-5.362220287322998)"
+            >
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+            <g opacity="1" transform="matrix(0.34999406337738037,0,0,0.34999406337738037,0,-6.999881267547607)">
+              <path
+                fill="rgb(255,78,69)"
+                fillOpacity="1"
+                d=" M0,-3 C1.6556999683380127,-3 3,-1.6556999683380127 3,0 C3,1.6556999683380127 1.6556999683380127,3 0,3 C-1.6556999683380127,3 -3,1.6556999683380127 -3,0 C-3,-1.6556999683380127 -1.6556999683380127,-3 0,-3z"
+              ></path>
+            </g>
+          </g>
+          <g
+            transform="matrix(0.8660253882408142,-0.5,0.5,0.8660253882408142,59.2075309753418,70.43893432617188)"
+            opacity="1"
+            style={{ display: "block" }}
+          >
+            <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="miter"
+                fillOpacity="0"
+                strokeMiterlimit="4"
+                stroke="rgb(229,229,44)"
+                strokeOpacity="1"
+                strokeWidth="6"
+                d="M0 0"
+              ></path>
+            </g>
+          </g>
+        </g>
+        <g
+          clipPath="url(#__lottie_element_201)"
+          transform="matrix(1.0880000591278076,0,0,1.0880000591278076,69.95299530029297,67.9433822631836)"
+          opacity="1"
+          style={{ display: "block" }}
+        >
+          <g transform="matrix(1,0,0,1,60,60)" opacity="1" style={{ display: "block" }}>
+            <path
+              fill="rgb(255,255,255)"
+              fillOpacity="1"
+              d=" M25.025999069213867,-4.00600004196167 C25.025999069213867,-4.00600004196167 5.992000102996826,-3.996999979019165 5.992000102996826,-3.996999979019165 C5.992000102996826,-3.996999979019165 11.012999534606934,-22.983999252319336 11.012999534606934,-22.983999252319336 C12.230999946594238,-26.90399932861328 13,-31.94300079345703 8.994000434875488,-31.981000900268555 C7,-32 5,-32 4.021999835968018,-31.007999420166016 C4.021999835968018,-31.007999420166016 -19.993000030517578,-5.03000020980835 -19.993000030517578,-5.03000020980835 C-19.993000030517578,-5.03000020980835 -20.027999877929688,32.025001525878906 -20.027999877929688,32.025001525878906 C-20.027999877929688,32.025001525878906 20.97599983215332,31.986000061035156 20.97599983215332,31.986000061035156 C25.010000228881836,31.986000061035156 26.198999404907227,29.562000274658203 26.99799919128418,25.985000610351562 C26.99799919128418,25.985000610351562 31.972000122070312,4.026000022888184 31.972000122070312,4.026000022888184 C33,-0.6930000185966492 30.392000198364258,-4.00600004196167 25.025999069213867,-4.00600004196167z"
+            ></path>
+            <path
+              strokeLinecap="butt"
+              strokeLinejoin="miter"
+              fillOpacity="0"
+              strokeMiterlimit="4"
+              stroke="rgb(255,255,255)"
+              strokeOpacity="1"
+              strokeWidth="4"
+              d=" M25.025999069213867,-4.00600004196167 C25.025999069213867,-4.00600004196167 5.992000102996826,-3.996999979019165 5.992000102996826,-3.996999979019165 C5.992000102996826,-3.996999979019165 11.012999534606934,-22.983999252319336 11.012999534606934,-22.983999252319336 C12.230999946594238,-26.90399932861328 13,-31.94300079345703 8.994000434875488,-31.981000900268555 C7,-32 5,-32 4.021999835968018,-31.007999420166016 C4.021999835968018,-31.007999420166016 -19.993000030517578,-5.03000020980835 -19.993000030517578,-5.03000020980835 C-19.993000030517578,-5.03000020980835 -20.027999877929688,32.025001525878906 -20.027999877929688,32.025001525878906 C-20.027999877929688,32.025001525878906 20.97599983215332,31.986000061035156 20.97599983215332,31.986000061035156 C25.010000228881836,31.986000061035156 26.198999404907227,29.562000274658203 26.99799919128418,25.985000610351562 C26.99799919128418,25.985000610351562 31.972000122070312,4.026000022888184 31.972000122070312,4.026000022888184 C33,-0.6930000185966492 30.392000198364258,-4.00600004196167 25.025999069213867,-4.00600004196167z"
+            ></path>
+          </g>
+          <g
+            transform="matrix(0.9986448287963867,0.05204305797815323,-0.05204305797815323,0.9986448287963867,61.79304885864258,62.634456634521484)"
+            opacity="1"
+            style={{ display: "none" }}
+          >
+            <path
+              strokeLinecap="butt"
+              strokeLinejoin="miter"
+              fillOpacity="0"
+              strokeMiterlimit="4"
+              stroke="rgb(249,254,249)"
+              strokeOpacity="1"
+              strokeWidth="4"
+              d=" M25.025999069213867,-4.00600004196167 C25.025999069213867,-4.00600004196167 5.992000102996826,-3.996999979019165 5.992000102996826,-3.996999979019165 C5.992000102996826,-3.996999979019165 11.012999534606934,-22.983999252319336 11.012999534606934,-22.983999252319336 C12.230999946594238,-26.90399932861328 13,-31.94300079345703 8.994000434875488,-31.981000900268555 C7,-32 5,-32 4.021999835968018,-31.007999420166016 C4.021999835968018,-31.007999420166016 -19.993000030517578,-5.03000020980835 -19.993000030517578,-5.03000020980835 C-19.993000030517578,-5.03000020980835 -20.027999877929688,32.025001525878906 -20.027999877929688,32.025001525878906 C-20.027999877929688,32.025001525878906 20.97599983215332,31.986000061035156 20.97599983215332,31.986000061035156 C25.010000228881836,31.986000061035156 26.198999404907227,29.562000274658203 26.99799919128418,25.985000610351562 C26.99799919128418,25.985000610351562 31.972000122070312,4.026000022888184 31.972000122070312,4.026000022888184 C33,-0.6930000185966492 30.392000198364258,-4.00600004196167 25.025999069213867,-4.00600004196167z"
+            ></path>
+          </g>
+          <g transform="matrix(1,0,0,1,60,60)" opacity="1" style={{ display: "block" }}>
+            <path
+              fill="rgb(255,255,255)"
+              fillOpacity="1"
+              d=" M-27.993000030517578,-4.015999794006348 C-27.993000030517578,-4.015999794006348 -36.02799987792969,-3.996999979019165 -36.02799987792969,-3.996999979019165 C-36.02799987792969,-3.996999979019165 -36,31.9950008392334 -36,31.9950008392334 C-36,31.9950008392334 -28.027999877929688,31.976999282836914 -28.027999877929688,31.976999282836914 C-28.027999877929688,31.976999282836914 -27.993000030517578,-4.015999794006348 -27.993000030517578,-4.015999794006348z"
+            ></path>
+            <path
+              strokeLinecap="butt"
+              strokeLinejoin="miter"
+              fillOpacity="0"
+              strokeMiterlimit="4"
+              stroke="rgb(255,255,255)"
+              strokeOpacity="1"
+              strokeWidth="4"
+              d=" M-27.993000030517578,-4.015999794006348 C-27.993000030517578,-4.015999794006348 -36.02799987792969,-3.996999979019165 -36.02799987792969,-3.996999979019165 C-36.02799987792969,-3.996999979019165 -36,31.9950008392334 -36,31.9950008392334 C-36,31.9950008392334 -28.027999877929688,31.976999282836914 -28.027999877929688,31.976999282836914 C-28.027999877929688,31.976999282836914 -27.993000030517578,-4.015999794006348 -27.993000030517578,-4.015999794006348z"
+            ></path>
+          </g>
+          <g
+            transform="matrix(0.9986448287963867,0.05204305797815323,-0.05204305797815323,0.9986448287963867,61.79304885864258,62.634456634521484)"
+            opacity="1"
+            style={{ display: "none" }}
+          >
+            <path
+              strokeLinecap="butt"
+              strokeLinejoin="miter"
+              fillOpacity="0"
+              strokeMiterlimit="4"
+              stroke="rgb(249,254,249)"
+              strokeOpacity="1"
+              strokeWidth="4"
+              d=" M-19.986000061035156,-4.03000020980835 C-19.986000061035156,-4.03000020980835 -36.020999908447266,-3.996999979019165 -36.020999908447266,-3.996999979019165 C-36.020999908447266,-3.996999979019165 -36.00199890136719,31.993000030517578 -36.00199890136719,31.993000030517578 C-36.00199890136719,31.993000030517578 -20.030000686645508,32.02299880981445 -20.030000686645508,32.02299880981445 C-20.030000686645508,32.02299880981445 -19.986000061035156,-4.03000020980835 -19.986000061035156,-4.03000020980835z"
+            ></path>
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+};
+
 export const DislikeOutlinedIcon = () => {
   return (
     <svg
@@ -897,9 +1336,25 @@ export const DislikeOutlinedIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'block', width: '100%', height: '100%' }}
+      style={{ pointerEvents: "none", display: "block", width: "100%", height: "100%" }}
     >
       <path d="M17,4h-1H6.57C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21 c0.58,0,1.14-0.24,1.52-0.65L17,14h4V4H17z M10.4,19.67C10.21,19.88,9.92,20,9.62,20c-0.26,0-0.5-0.11-0.63-0.3 c-0.07-0.1-0.15-0.26-0.09-0.47l1.52-4.94l0.4-1.29H9.46H5.23c-0.41,0-0.8-0.17-1.03-0.46c-0.12-0.15-0.25-0.4-0.18-0.72l1.34-6 C5.46,5.35,5.97,5,6.57,5H16v8.61L10.4,19.67z M20,13h-3V5h3V13z"></path>
+    </svg>
+  );
+};
+
+export const DislikeFilledIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      enableBackground="new 0 0 24 24"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      focusable="false"
+      style={{ pointerEvents: "none", display: "block", width: "100%", height: "100%" }}
+    >
+      <path d="M18,4h3v10h-3V4z M5.23,14h4.23l-1.52,4.94C7.62,19.97,8.46,21,9.62,21c0.58,0,1.14-0.24,1.52-0.65L17,14V4H6.57 C5.5,4,4.59,4.67,4.38,5.61l-1.34,6C2.77,12.85,3.82,14,5.23,14z"></path>
     </svg>
   );
 };
@@ -912,7 +1367,7 @@ export const ShareOutlinedIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'block', width: '100%', height: '100%' }}
+      style={{ pointerEvents: "none", display: "block", width: "100%", height: "100%" }}
     >
       <path d="M15 5.63 20.66 12 15 18.37V14h-1c-3.96 0-7.14 1-9.75 3.09 1.84-4.07 5.11-6.4 9.89-7.1l.86-.13V5.63M14 3v6C6.22 10.13 3.11 15.33 2 21c2.78-3.97 6.44-6 12-6v6l8-9-8-9z"></path>
     </svg>
@@ -927,7 +1382,7 @@ export const DotsMenuIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'block', width: '100%', height: '100%' }}
+      style={{ pointerEvents: "none", display: "block", width: "100%", height: "100%" }}
     >
       <path d="M7.5 12c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zm4.5-1.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm6 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path>
     </svg>
@@ -942,7 +1397,7 @@ export const SaveVideoIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'block', width: '100%', height: '100%' }}
+      style={{ pointerEvents: "none", display: "block", width: "100%", height: "100%" }}
     >
       <path d="M22 13h-4v4h-2v-4h-4v-2h4V7h2v4h4v2zm-8-6H2v1h12V7zM2 12h8v-1H2v1zm0 4h8v-1H2v1z"></path>
     </svg>
@@ -958,7 +1413,7 @@ export const SortIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'inherit', width: '100%', height: '100%' }}
+      style={{ pointerEvents: "none", display: "inherit", width: "100%", height: "100%" }}
     >
       <path d="M21 6H3V5h18v1zm-6 5H3v1h12v-1zm-6 6H3v1h6v-1z"></path>
     </svg>
@@ -974,7 +1429,7 @@ export const EmojiIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'inherit' }}
+      style={{ pointerEvents: "none", display: "inherit" }}
     >
       <path d="M15.83 15c-.52 1.38-2.19 2-3.79 2-1.59 0-3.28-.62-3.85-2h7.64m.69-1H7.49c-.27 0-.49.22-.46.47C7.34 16.83 9.7 18 12.05 18c2.35 0 4.69-1.18 4.93-3.54.03-.25-.2-.46-.46-.46zM12 3c4.96 0 9 4.04 9 9s-4.04 9-9 9-9-4.04-9-9 4.04-9 9-9m0-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM6.94 9.73C7.19 9.25 7.72 9 8.5 9c.75 0 1.28.25 1.57.75.14.24.45.32.68.18.24-.14.32-.44.18-.68C10.6 8.68 9.91 8 8.5 8c-1.48 0-2.15.69-2.44 1.27-.13.25-.03.55.21.67.07.04.15.06.23.06.18 0 .36-.1.44-.27zm7 0c.25-.48.78-.73 1.56-.73.75 0 1.28.25 1.57.75.14.24.45.32.68.18.24-.14.32-.44.18-.68C17.6 8.68 16.91 8 15.5 8c-1.48 0-2.15.69-2.44 1.27-.13.25-.03.55.21.67.07.04.15.06.23.06.18 0 .36-.1.44-.27z"></path>
     </svg>
@@ -987,7 +1442,7 @@ export const CaretDown = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'inherit' }}
+      style={{ pointerEvents: "none", display: "inherit" }}
     >
       <path d="M7 10l5 5 5-5z"></path>
     </svg>
@@ -1000,7 +1455,7 @@ export const CaretUp = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       focusable="false"
-      style={{ pointerEvents: 'none', display: 'inherit' }}
+      style={{ pointerEvents: "none", display: "inherit" }}
     >
       <path d="M7 14l5-5 5 5z"></path>
     </svg>

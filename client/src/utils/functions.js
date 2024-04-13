@@ -2,20 +2,20 @@ export const parseDuration = (second) => {
   second = parseInt(second);
 
   if (second < 3600) {
-    let min = String(parseInt(second / 60)).padStart(2, '0'),
-      sec = String(second % 60).padStart(2, '0');
+    let min = String(parseInt(second / 60)).padStart(2, "0"),
+      sec = String(second % 60).padStart(2, "0");
 
     return `${min}:${sec}`;
   }
 
   let hr = parseInt(second / 3600),
-    min = String(parseInt((second % 3600) / 60)).padStart(2, '0'),
-    sec = String(second % 60).padStart(2, '0');
+    min = String(parseInt((second % 3600) / 60)).padStart(2, "0"),
+    sec = String(second % 60).padStart(2, "0");
 
   return `${hr}:${min}:${sec}`;
 };
 
-export const convertToInternationalNumber = (number, singluarText = '', pluralText = '') => {
+export const convertToInternationalNumber = (number, singluarText = "", pluralText = "") => {
   number = String(number);
 
   if (number <= 1) return `${number} ${singluarText}`;
@@ -72,15 +72,55 @@ export const calculateAge = (time) => {
   return `${second} seconds ago`;
 };
 
-export const addToggle = (e, toggleSelector, toggleTextObj = ['More', 'Less']) => {
+export const addToggle = (e, toggleSelector, toggleTextObj = ["More", "Less"]) => {
   const elem = e.target;
 
   const parent = elem.closest(toggleSelector);
-  if (parent?.classList.contains('toggle-active')) {
-    parent.classList.remove('toggle-active');
+  if (parent?.classList.contains("toggle-active")) {
+    parent.classList.remove("toggle-active");
     elem.innerHTML = toggleTextObj[0];
   } else {
-    parent?.classList.add('toggle-active');
+    parent?.classList.add("toggle-active");
     elem.innerHTML = toggleTextObj[1];
   }
+};
+
+export const constructQueryFromObj = (obj) => {
+  let query = [];
+
+  for (let i in obj) {
+    query.push(`${i}=${obj[i]}`);
+  }
+
+  return query.join("&");
+};
+
+export const openConsentScreen = () => {
+  var oauth2Endpoint = "https://accounts.google.com/o/oauth2/v2/auth";
+
+  var form = document.createElement("form");
+  form.setAttribute("method", "GET");
+  form.setAttribute("action", oauth2Endpoint);
+
+  var params = {
+    client_id: import.meta.env.VITE_CLIENT_ID,
+    redirect_uri: import.meta.env.VITE_REDIRECT_URL,
+    response_type: "token",
+    scope:
+      "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.force-ssl",
+    include_granted_scopes: "true",
+    state: "google-auth",
+  };
+
+  for (let p in params) {
+    const input = document.createElement("input");
+    input.setAttribute("type", "hidden");
+    input.setAttribute("name", p);
+    input.setAttribute("value", params[p]);
+
+    form.append(input);
+  }
+
+  document.documentElement.append(form);
+  form.submit();
 };

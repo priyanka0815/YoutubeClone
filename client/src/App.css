@@ -7,10 +7,41 @@
 }
 
 .skeleton {
-    background: #ccc;
-    min-height: 50px;
-    border-radius: 15px;
+    background: #ededed20;
+    min-height: 10px;
+    height: 100%;
+    border-radius: 5px;
     color: #262626;
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton::before,
+.skeleton::after {
+    content: '';
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    background: #999;
+    transform: skew(15deg);
+    filter: blur(20px);
+    animation: skeleton-loading 3s linear infinite;
+}
+
+.skeleton::after {
+    left: -50px;
+    animation-delay: 1.5s;
+
+}
+
+@keyframes skeleton-loading {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%
+    }
 }
 
 .text-ellipsis {

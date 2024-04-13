@@ -117,8 +117,6 @@
 }
 
 #watch_video_detail #channel_info .subscribe button {
-    background: #f1f1f1;
-    color: #0f0f0f;
     height: 40px;
     border: 0;
     padding: 0 20px;
@@ -127,6 +125,21 @@
     margin-left: 20px;
     cursor: pointer;
 }
+
+#watch_video_detail #channel_info .subscribe button.subscribe {
+    background: var(--white-text-color);
+    color: var(--yt-bg);
+}
+
+#watch_video_detail #channel_info .subscribe button.unsubscribe {
+    background: var(--highlight-bg);
+    color: var(--white-text-color);
+}
+
+#watch_video_detail #channel_info .subscribe button.unsubscribe:hover {
+    background: var(--highlight-light-bg);
+}
+
 
 #watch_page #video_actions {
     --border-radius: 20px;
@@ -345,6 +358,10 @@
     margin: 0;
 }
 
+.comment .comment-text a {
+    color: var(--link-blue) !important;
+}
+
 .comment .comment-action>div {
     height: 30px;
     line-height: 30px;
@@ -438,6 +455,7 @@
     #watch_page #watch_video {
         border-radius: 0;
         height: auto;
+        width: 100%;
         aspect-ratio: 4 / 3;
     }
 

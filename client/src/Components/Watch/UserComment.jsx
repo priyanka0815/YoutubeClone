@@ -1,55 +1,65 @@
-import React, { Suspense, useState } from 'react';
-import CommentForm from './CommentForm';
-import { Link } from 'react-router-dom';
-import { calculateAge, convertToInternationalNumber } from '../../utils/functions';
-import { CaretDown, CaretUp, DislikeOutlinedIcon, LikeOutlinedIcon } from '../../utils/Icons';
-import { Loading } from '../inc';
+import React, { Suspense, useState } from "react";
+import CommentForm from "./CommentForm";
+import { Link } from "react-router-dom";
+import { calculateAge, convertToInternationalNumber } from "../../utils/functions";
+import { CaretDown, CaretUp, DislikeOutlinedIcon, LikeOutlinedIcon } from "../../utils/Icons";
+import { Loading } from "../inc";
 
 const UserComment = (props) => {
   const [isReplyActive, setIsReplyActive] = useState(false);
   const [toggleReplies, setToggleReplies] = useState(false);
+  const [replies, setReplies] = useState(props.replies);
 
   return (
     <div className="comment">
       <div className="user-img">
-        <Link to={`/@${props?.channel.handle}`}>
-          <img src={props.channel.thumbnail} alt={`${props.channel.name}&apos; Logo`} />
+        <Link to={`/${props.commentData.authorDisplayName}`}>
+          <img
+            src={props.commentData.authorProfileImageUrl}
+            alt={`${props.commentData.authorDisplayName}&apos;s Logo`}
+          />
         </Link>
       </div>
 
       <div className="info">
         <div className="user-info">
-          <Link to={`/@${props?.channel.handle}`}>@{props?.channel.name}</Link>
-          <span className="info-span">{calculateAge(props.comment.time ?? 0)}</span>
+          <Link to={`/${props.commentData.authorDisplayName}`}>{props.commentData.authorDisplayName}</Link>
+          <span className="info-span">{calculateAge(props.commentData.publishedAt ?? 0)}</span>
         </div>
 
-        <p className="comment-text">{props.comment.comment}</p>
+        <p className="comment-text" dangerouslySetInnerHTML={{ __html: props.commentData.textDisplay }}></p>
 
         <div className="comment-action btn-container">
-          <div>
-            <div className="yt-icon hover-highlight">
-              <LikeOutlinedIcon />
-            </div>
-            {convertToInternationalNumber(props.comment.likes)}
-          </div>
+          {props.commentData.canRate && (
+            <>
+              <div>
+                <div className={`yt-icon hover-highlight ${props.commentData.viewerRating == "like" ? "fill" : ""}`}>
+                  <LikeOutlinedIcon />
+                </div>
+                {convertToInternationalNumber(props.commentData.likeCount)}
+              </div>
 
-          <div>
-            <div className="yt-icon hover-highlight">
-              <DislikeOutlinedIcon />
-            </div>
-          </div>
+              <div>
+                <div className="yt-icon hover-highlight">
+                  <DislikeOutlinedIcon />
+                </div>
+              </div>
+            </>
+          )}
 
-          <div
-            className="hover-highlight reply"
-            onClick={() => setIsReplyActive((prevIsReplyActive) => !prevIsReplyActive)}
-          >
-            Reply
-          </div>
+          {props.canReply && (
+            <div
+              className="hover-highlight reply"
+              onClick={() => setIsReplyActive((prevIsReplyActive) => !prevIsReplyActive)}
+            >
+              Reply
+            </div>
+          )}
         </div>
 
-        {isReplyActive && <CommentForm commentId={props?.comment.id} />}
+        {props.canReply && isReplyActive && <CommentForm parentId={props.commentId} setReplies={setReplies} />}
 
-        {props.comment.replyCount > 0 && (
+        {props.replyCount > 0 && (
           <div>
             <div
               className="replies hover-highlight"
@@ -57,24 +67,22 @@ const UserComment = (props) => {
             >
               <div className="yt-icon">{toggleReplies ? <CaretUp /> : <CaretDown />}</div>
 
-              <div className="text">{convertToInternationalNumber(props.comment.replyCount, 'reply', 'replies')}</div>
+              <div className="text">{convertToInternationalNumber(props.replyCount, "reply", "replies")}</div>
             </div>
 
             {toggleReplies && (
               <Suspense fallback={<Loading />}>
-                <UserComment
-                  channel={{
-                    name: 'Sarwang Jain',
-                    handle: 'jainsarwang',
-                    thumbnail: '/images/channels/ZeeTv.jpg?time=31832080',
-                  }}
-                  comment={{
-                    id: 3,
-                    comment: 'Ndsajdhs hdksahdahsd hkfjhdjfhhfdjfdjfl dfkjdlfj;l',
-                    likes: 823910,
-                    time: 10218924,
-                  }}
-                />
+                {replies.length > 0 &&
+                  replies &&
+                  replies.map((reply, idx) => (
+                    <UserComment
+                      key={idx}
+                      // parentId={props.commentId}
+                      commentData={reply.snippet}
+                      // canReply={false}
+                      // replyCount={0}
+                    />
+                  ))}
               </Suspense>
             )}
           </div>
