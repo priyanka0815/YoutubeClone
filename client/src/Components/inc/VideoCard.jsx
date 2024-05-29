@@ -1,48 +1,75 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { VerifiedIcon } from '../../utils/Icons';
-import { calculateAge, convertToInternationalNumber, parseDuration } from '../../utils/functions';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { VerifiedIcon } from "../../utils/Icons";
+import { calculateAge, convertToInternationalNumber, parseDuration } from "../../utils/functions";
+import { API } from "../../utils/api";
 
-const VideoCard = (props) => {
+const VideoCard = ({ video, ...props }) => {
+  const [channelDetail, setChannelDetail] = useState({});
+
+  useEffect(() => {
+    const channelInfo = async () => {
+      const response = await API.getChannelDetails(`part=snippet&id=${video.snippet.channelId}`);
+
+      if (response.isError || response.items.length == 0) {
+        throw new Error("Error While getting channel detail");
+      }
+
+      setChannelDetail(response.items[0].snippet);
+      console.log(response.items[0].snippet);
+    };
+
+    if (props.loadChannelInfo && !props.isLogoAllowed && video.snippet?.channelId) {
+      channelInfo();
+    }
+  }, [video.snippet?.channelId]);
+
+  useEffect(() => {
+    if (props.channel) setChannelDetail(props.channel);
+  }, [props.channel]);
+
   return (
-    <div className={`videocard ${props.isPlaylistItem ? 'playlist-item' : ''}`}>
-      <div className="thumbnail">
-        <Link to={`/watch?v=${props.videoId}`}>
-          <img src={`/images/thumbnails/${props.thumbnail}`} alt={props.videoTitle} />
-          <span className="duration">{parseDuration(props.duration)}</span>
-        </Link>
-      </div>
+    <div className={`videocard ${props.isPlaylistItem ? "playlist-item" : ""}`}>
+      <Link to={`/watch?v=${video.id}`}>
+        <div className="thumbnail">
+          <img src={`${video.snippet?.thumbnails.medium.url}`} alt={video.snippet?.title} />
+          <span className="duration">{parseDuration(video.contentDetails?.duration)}</span>
+        </div>
+      </Link>
 
       <div className="info">
         {(props.isLogoAllowed == undefined || props.isLogoAllowed) && (
           <div className="channel-logo">
-            <Link to={`/@${props.channelHandle}`}>
-              <img src={`/images/channels/${props.channelLogo}`} alt={props.channelName} />
+            <Link to={`/${channelDetail.customUrl}`}>
+              <img src={`${channelDetail.thumbnails?.default.url}`} alt={video.snippet?.channelTitle} />
             </Link>
           </div>
         )}
 
         <div className="video-info">
-          <h4 className="text-ellipsis">
-            <Link to={`/watch?v=${props.videoId}`}>{props.videoTitle}</Link>
-          </h4>
+          <Link to={`/watch?v=${video.id}`}>
+            <h4 className="text-ellipsis">{video.snippet?.title}</h4>
+          </Link>
 
           <div className="channel-info text-ellipsis">
-            <span className="channel-name">
-              <Link to={`/@${props.channelHandle}`}>{props.channelName}</Link>
-            </span>
-            {props.isVerified && (
-              <span className="verify">
-                <VerifiedIcon />
-              </span>
-            )}
+            <Link to={channelDetail.customUrl ? `/${channelDetail.customUrl}` : `/channel/${video.snippet?.channelId}`}>
+              <span className="channel-name">{video.snippet?.channelTitle}</span>
+              {props.isVerified && (
+                <span className="verify">
+                  <VerifiedIcon />
+                </span>
+              )}
+            </Link>
           </div>
-
-          <div className="extra-info text-ellipsis">
-            <span>{convertToInternationalNumber(props.totalViews)} views</span>
-            <span>•</span>
-            <span>{calculateAge(props.uploadTime)}</span>
-          </div>
+          <Link to={`/watch?v=${video.id}`}>
+            <div className="video-info">
+              <div className="extra-info text-ellipsis">
+                <span>{convertToInternationalNumber(video.statistics?.viewCount)} views</span>
+                <span>•</span>
+                <span>{calculateAge(video.snippet?.publishedAt)}</span>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

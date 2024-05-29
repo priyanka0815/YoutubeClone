@@ -375,6 +375,13 @@ header .logo svg {
 
 .videocard {
     cursor: pointer;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.videocard:active {
+    background: var(--highlight-light-bg);
 }
 
 .videocard.playlist-item {

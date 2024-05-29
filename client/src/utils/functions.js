@@ -1,4 +1,21 @@
-export const parseDuration = (second) => {
+export const parseDuration = (duration) => {
+  const match = duration?.match(/^P((?<day>\d+)D)?T((?<hour>\d+)H)?((?<minute>\d+)M)?((?<second>\d+)S)?$/),
+    group = match?.groups;
+
+  if (!group) return "00:00";
+
+  let day = "",
+    hour = "",
+    minute = "00:",
+    second = "00";
+
+  if (group.day) day = group.day + ":";
+  if (group.hour) hour = group.hour.padStart(2, "0") + ":";
+  if (group.minute) minute = group.minute.padStart(2, "0") + ":";
+  if (group.second) second = group.second.padStart(2, "0");
+
+  return hour + minute + second;
+
   second = parseInt(second);
 
   if (second < 3600) {
