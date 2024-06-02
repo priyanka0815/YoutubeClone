@@ -66,6 +66,12 @@ export const SERVICE_URL = {
     tag: "addVideoComments",
     authorization: true,
   },
+  getSearch: {
+    url: `https://www.googleapis.com/youtube/v3/search?key=${import.meta.env.VITE_API_KEY}&`,
+    method: "get",
+    query: true,
+    tag: "searchVideos",
+  },
   getAllProducts: { url: "/getproducts", method: "GET", tag: "loadProducts" },
   getProductsByCategory: { url: "/getproductbycategory", method: "GET", query: true, tag: "loadProducts" },
   getProductsBySubCategory: { url: "/getproductbysubcategory", method: "GET", query: true, tag: "loadProducts" },

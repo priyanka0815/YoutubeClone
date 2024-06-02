@@ -6,6 +6,11 @@
     --link-blue: #3ea6ff;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .skeleton {
     background: #ededed20;
     min-height: 10px;
@@ -86,6 +91,31 @@
     aspect-ratio: 1;
     margin: 20% 0;
 }
+
+
+.subscribe button {
+    height: 40px;
+    border: 0;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.subscribe button.subscribe {
+    background: var(--white-text-color);
+    color: var(--yt-bg);
+}
+
+.subscribe button.unsubscribe {
+    background: var(--highlight-bg);
+    color: var(--white-text-color);
+}
+
+.subscribe button.unsubscribe:hover {
+    background: var(--highlight-light-bg);
+}
+
 
 html,
 body {

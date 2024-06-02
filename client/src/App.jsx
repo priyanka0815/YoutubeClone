@@ -7,6 +7,8 @@ import Home from "./Components/Home";
 import WatchPage from "./Components/Watch";
 import Verify from "./Components/Verify";
 import { YTProvider } from "./utils/YTContext";
+import Channel from "./Components/Channel";
+import ChannelVideos from "./Components/Channel/ChannelVideos";
 
 const App = () => {
   return (
@@ -19,7 +21,26 @@ const App = () => {
 
           <main>
             <Routes>
-              <Route path="/" index element={<Home />} />
+              <Route path="/">
+                <Route index path="/home" element={<Home />} />
+                <Route path=":handle" element={<Channel />}>
+                  <Route
+                    index
+                    path="home"
+                    element={
+                      <div>
+                        39132
+                        <ChannelVideos />
+                      </div>
+                    }
+                  />
+                  <Route path="videos" element={<ChannelVideos />} />
+                  <Route path="shorts" element={<ChannelVideos />} />
+                  <Route path="live" element={<ChannelVideos />} />
+                  <Route path="playlist" element={<ChannelVideos />} />
+                  <Route path="community" element={<ChannelVideos />} />
+                </Route>
+              </Route>
               <Route path="/watch" element={<WatchPage />} />
               <Route path="/account/">
                 <Route path="verify" element={<Verify />} />

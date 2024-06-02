@@ -37,7 +37,7 @@ const index = () => {
   return (
     <div id="home">
       <TopCategory categories={TopCategories} />
-      <div id="homegrid">
+      <div id="homegrid" className="video-grid">
         {videos.map((video, idx) => (
           <VideoCard
             key={idx}

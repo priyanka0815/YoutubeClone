@@ -51,16 +51,21 @@ const VideoCard = ({ video, ...props }) => {
             <h4 className="text-ellipsis">{video.snippet?.title}</h4>
           </Link>
 
-          <div className="channel-info text-ellipsis">
-            <Link to={channelDetail.customUrl ? `/${channelDetail.customUrl}` : `/channel/${video.snippet?.channelId}`}>
-              <span className="channel-name">{video.snippet?.channelTitle}</span>
-              {props.isVerified && (
-                <span className="verify">
-                  <VerifiedIcon />
-                </span>
-              )}
-            </Link>
-          </div>
+          {(props.isChannelNameAllowed == undefined || props.isChannelNameAllowed) && (
+            <div className="channel-info text-ellipsis">
+              <Link
+                to={channelDetail.customUrl ? `/${channelDetail.customUrl}` : `/channel/${video.snippet?.channelId}`}
+              >
+                <span className="channel-name">{video.snippet?.channelTitle}</span>
+                {props.isVerified && (
+                  <span className="verify">
+                    <VerifiedIcon />
+                  </span>
+                )}
+              </Link>
+            </div>
+          )}
+
           <Link to={`/watch?v=${video.id}`}>
             <div className="video-info">
               <div className="extra-info text-ellipsis">

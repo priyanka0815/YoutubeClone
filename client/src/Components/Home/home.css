@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-#homegrid {
+.video-grid {
     display: grid;
     gap: 30px 15px;
     padding-top: 30px;
@@ -13,7 +13,7 @@
     /* height: calc(100% - 300px); */
 }
 
-#homegrid::-webkit-scrollbar {
+.video-grid::-webkit-scrollbar {
     display: none;
     width: 0;
 }
