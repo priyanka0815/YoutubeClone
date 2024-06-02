@@ -54,8 +54,8 @@ const Channel = () => {
       if (!data.isError) {
         if (data.items.length > 0) {
           // subscribed to channel
-          setInfo((prevInfo) => ({
-            ...prevInfo,
+          setChannelDetails((prevChannelDetails) => ({
+            ...prevChannelDetails,
             isSubscribed: true,
             subscriptionId: data.items[0].id,
           }));
@@ -137,7 +137,11 @@ const Channel = () => {
               </div> */}
 
               <div className="subscribe">
-                <button id="subscribe_btn">Subscribe</button>
+                {channelDetails.isSubscribed ? (
+                  <button className="unsubscribe">Subscribed</button>
+                ) : (
+                  <button className="subscribe">Subscribe</button>
+                )}
               </div>
             </div>
           </div>

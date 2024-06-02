@@ -198,7 +198,7 @@ const index = () => {
             <div className="channel-detail">
               <div className="channel-name">
                 <h4>
-                  <Link to={`/@${info?.channelInfo?.customUrl}`}>
+                  <Link to={`/${info?.channelInfo?.customUrl}`}>
                     {info?.channelInfo?.title ?? "{{ CHANNEL NAME }}"}
                   </Link>
                 </h4>
