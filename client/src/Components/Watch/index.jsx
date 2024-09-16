@@ -3,7 +3,16 @@ import { API } from "../../utils/api";
 import "./watch.css";
 import Playlist from "./Playlist";
 import { Link, useSearchParams } from "react-router-dom";
-import { addToggle, calculateAge, constructQueryFromObj, convertToInternationalNumber } from "../../utils/functions";
+import {
+  addSubscription,
+  addToggle,
+  calculateAge,
+  constructQueryFromObj,
+  convertToInternationalNumber,
+  fetchSubscribe,
+  formatVideoDescription,
+  removeSubscription,
+} from "../../utils/functions";
 import {
   DislikeFilledIcon,
   DislikeOutlinedIcon,
@@ -62,20 +71,7 @@ const index = () => {
   };
 
   const addSubscribe = async (e) => {
-    if (!info?.videoInfo?.channelId) return;
-
-    const data = await API.addSubscription({
-      body: {
-        part: "snippet",
-        snippet: {
-          resourceId: {
-            kind: "youtube#subscription",
-            channelId: info?.videoInfo?.channelId,
-          },
-        },
-      },
-      authorization: `${ytContextData.googleAuth.tokenType} ${ytContextData.googleAuth.accessToken}`,
-    });
+    const data = await addSubscription(ytContextData, info?.videoInfo?.channelId);
 
     if (!data.isError) {
       setInfo((prevInfo) => ({
@@ -87,14 +83,7 @@ const index = () => {
   };
 
   const removeSubscribe = async (e) => {
-    if (!info.subscriptionId) return;
-
-    const data = await API.removeSubsciption({
-      body: {
-        id: info.subscriptionId,
-      },
-      authorization: `${ytContextData.googleAuth.tokenType} ${ytContextData.googleAuth.accessToken}`,
-    });
+    const data = await removeSubscription(ytContextData, info.subscriptionId);
 
     if (!data.isError) {
       setInfo((prevInfo) => ({
@@ -142,15 +131,10 @@ const index = () => {
       }
     }
 
-    async function fetchSubscribe() {
-      if (!ytContextData.googleAuth) return;
+    async function fetchSubscribes() {
+      const data = await fetchSubscribe(ytContextData, info?.videoInfo?.channelId);
 
-      const data = await API.getSubscription({
-        body: constructQueryFromObj({ mine: true, forChannelId: info?.videoInfo?.channelId }),
-        authorization: `${ytContextData.googleAuth.tokenType} ${ytContextData.googleAuth.accessToken}`,
-      });
-
-      if (!data.isError) {
+      if (data && !data.isError) {
         if (data.items.length > 0) {
           // subscribed to channel
           setInfo((prevInfo) => ({
@@ -165,12 +149,12 @@ const index = () => {
     if (info?.videoId) {
       fetchChannel();
       fetchRating();
-      fetchSubscribe();
+      fetchSubscribes();
     }
   }, [info?.videoInfo?.channelId]);
 
   return (
-    <div id="watch_page">
+    <div id="watch_page" className="fix-scroll">
       <div id="watch_video">
         <iframe
           width="1280px"
@@ -265,16 +249,15 @@ const index = () => {
           <div className="text-ellipsis" id="toggle_window">
             <p
               className="bold"
-              title={`${convertToInternationalNumber(info?.videoInfo?.statistics.viewCount ?? 0)} views ${
+              title={`${convertToInternationalNumber(info?.videoInfo?.statistics.viewCount ?? 0, "view", "views")} ${
                 info?.videoInfo?.liveBroadcastContent == "live" ? "Streamed" : ""
               } ${calculateAge(info?.videoInfo?.publishedAt)} #jsajdl`}
             >
-              {`${convertToInternationalNumber(info?.videoInfo?.statistics.viewCount ?? 0)} views `}
+              {`${convertToInternationalNumber(info?.videoInfo?.statistics.viewCount ?? 0, "view", "views")} `}
               {info?.videoInfo?.liveBroadcastContent == "live" && "Streamed "}
               {`${calculateAge(info?.videoInfo?.publishedAt)} `}
-              <a href="#">#jsajdl</a>
             </p>
-            <p dangerouslySetInnerHTML={{ __html: info?.videoInfo?.description.replaceAll("\n", "<br />") }}></p>
+            <p dangerouslySetInnerHTML={{ __html: formatVideoDescription(info?.videoInfo?.description) }}></p>
           </div>
 
           <p className="toggle-btn" onClick={(e) => addToggle(e, "#video_detail", ["More", "Show Less"])}>

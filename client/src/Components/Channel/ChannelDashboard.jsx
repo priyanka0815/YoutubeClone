@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link, NavLink, Outlet, useParams } from "react-router-dom";
-import { addToggle, constructQueryFromObj, convertToInternationalNumber } from "../../utils/functions";
+import { addToggle, constructQueryFromObj, convertToInternationalNumber, fetchSubscribe } from "../../utils/functions";
 import { SearchIcon } from "../../utils/Icons";
 import { API } from "../../utils/api";
 import { useYtContext } from "../../utils/YTContext";
 
-const Channel = () => {
+const ChannelDashboard = () => {
   const [ytContextData] = useYtContext();
   const [channelHandle, setChannelHandle] = useState("");
   const [channelId, setChannelId] = useState("");
@@ -22,7 +22,7 @@ const Channel = () => {
     const getChannelDetail = async () => {
       const channelInfo = {};
       if (channelHandle) channelInfo.forHandle = channelHandle;
-      else channelInfo.channelId = channelId;
+      else channelInfo.id = channelId;
 
       const data = await API.getChannelDetails(
         constructQueryFromObj({
@@ -40,20 +40,31 @@ const Channel = () => {
     };
 
     if (channelHandle || channelId) getChannelDetail();
+
+    let onlineFunc;
+    window.addEventListener(
+      "online",
+      (onlineFunc = function () {
+        console.log("Online");
+        if ((channelHandle || channelId) && channelDetails == {}) {
+          getChannelDetail();
+        }
+      })
+    );
+
+    return () => {
+      window.removeEventListener("online", onlineFunc);
+    };
   }, [channelHandle, channelId]);
 
   useEffect(() => {
-    async function fetchSubscribe() {
-      if (!ytContextData.googleAuth) return;
+    async function fetchSubscribes() {
+      const data = await fetchSubscribe(ytContextData, channelDetails.id);
 
-      const data = await API.getSubscription({
-        body: constructQueryFromObj({ mine: true, forChannelId: channelDetails.id }),
-        authorization: `${ytContextData.googleAuth.tokenType} ${ytContextData.googleAuth.accessToken}`,
-      });
-
-      if (!data.isError) {
+      if (data && !data.isError) {
         if (data.items.length > 0) {
           // subscribed to channel
+          console.log("Subscribed");
           setChannelDetails((prevChannelDetails) => ({
             ...prevChannelDetails,
             isSubscribed: true,
@@ -64,13 +75,13 @@ const Channel = () => {
     }
 
     if (channelDetails.id) {
-      fetchSubscribe();
+      fetchSubscribes();
     }
-  }, [channelDetails]);
+  }, [channelDetails.id]);
 
   const channelNavs = [
     {
-      url: "home",
+      url: "",
       text: "home",
     },
     {
@@ -96,18 +107,20 @@ const Channel = () => {
   ];
 
   return (
-    <div id="channel">
+    <div id="channel" className="fix-scroll">
       <div id="channel_header">
         <div className="container">
-          <div id="cover_img">
-            <img src={channelDetails.brandingSettings?.image.bannerExternalUrl} alt="" />
-          </div>
+          {channelDetails.brandingSettings?.image?.bannerExternalUrl && (
+            <div id="cover_img">
+              <img src={`${channelDetails.brandingSettings?.image?.bannerExternalUrl}=w1707`} alt="" />
+            </div>
+          )}
 
           <div id="channel_details">
             <div id="channel_logo">
               <img
-                src={channelDetails.snippet?.thumbnails.medium.url}
-                alt={`${channelDetails.snippet?.title}&apos;s Avatar`}
+                src={`${channelDetails.snippet?.thumbnails.medium.url}`}
+                alt={`${channelDetails.snippet?.title}\'s Avatar`}
               />
             </div>
 
@@ -145,30 +158,32 @@ const Channel = () => {
               </div>
             </div>
           </div>
-
-          <nav id="channel_nav">
-            {channelNavs.map((link, idx) => (
-              <li key={idx}>
-                <NavLink
-                  to={channelHandle ? `/${channelHandle}/${link.url}` : `/channel/${channelId}/${link.url}`}
-                  className={({ isActive }) => (isActive ? "active" : "")}
-                >
-                  {link.text}
-                </NavLink>
-              </li>
-            ))}
-            <li>
-              <SearchIcon />
-            </li>
-          </nav>
         </div>
       </div>
 
-      <div className="container">
+      <div id="channel_nav">
+        <nav className="container">
+          {channelNavs.map((link, idx) => (
+            <li key={idx}>
+              <NavLink
+                to={channelHandle ? `/${channelHandle}/${link.url}` : `/channel/${channelId}/${link.url}`}
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                {link.text}
+              </NavLink>
+            </li>
+          ))}
+          <li>
+            <SearchIcon />
+          </li>
+        </nav>
+      </div>
+
+      <div className="container" id="channel_section_data">
         <Outlet context={[channelDetails, setChannelDetails]} />
       </div>
     </div>
   );
 };
 
-export default Channel;
+export default ChannelDashboard;

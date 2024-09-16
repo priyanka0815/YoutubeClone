@@ -28,12 +28,17 @@ const VideoCard = ({ video, ...props }) => {
     if (props.channel) setChannelDetail(props.channel);
   }, [props.channel]);
 
+  if (video?.channel && !video?.channel?.channelId) return <></>;
+
   return (
     <div className={`videocard ${props.isPlaylistItem ? "playlist-item" : ""}`}>
       <Link to={`/watch?v=${video.id}`}>
         <div className="thumbnail">
           <img src={`${video.snippet?.thumbnails.medium.url}`} alt={video.snippet?.title} />
-          <span className="duration">{parseDuration(video.contentDetails?.duration)}</span>
+
+          {video.contentDetails?.duration && (
+            <span className="duration">{parseDuration(video.contentDetails?.duration)}</span>
+          )}
         </div>
       </Link>
 
@@ -41,7 +46,10 @@ const VideoCard = ({ video, ...props }) => {
         {(props.isLogoAllowed == undefined || props.isLogoAllowed) && (
           <div className="channel-logo">
             <Link to={`/${channelDetail.customUrl}`}>
-              <img src={`${channelDetail.thumbnails?.default.url}`} alt={video.snippet?.channelTitle} />
+              <img
+                src={`${channelDetail.thumbnails?.default.url}`}
+                alt={channelDetail.title ?? video.snippet?.channelTitle}
+              />
             </Link>
           </div>
         )}
@@ -54,9 +62,13 @@ const VideoCard = ({ video, ...props }) => {
           {(props.isChannelNameAllowed == undefined || props.isChannelNameAllowed) && (
             <div className="channel-info text-ellipsis">
               <Link
-                to={channelDetail.customUrl ? `/${channelDetail.customUrl}` : `/channel/${video.snippet?.channelId}`}
+                to={
+                  channelDetail.customUrl
+                    ? `/${channelDetail.customUrl}`
+                    : `/channel/${channelDetail.channelId ?? video.snippet?.channelId}`
+                }
               >
-                <span className="channel-name">{video.snippet?.channelTitle}</span>
+                <span className="channel-name">{channelDetail.title ?? video.snippet?.channelTitle}</span>
                 {props.isVerified && (
                   <span className="verify">
                     <VerifiedIcon />
@@ -69,8 +81,12 @@ const VideoCard = ({ video, ...props }) => {
           <Link to={`/watch?v=${video.id}`}>
             <div className="video-info">
               <div className="extra-info text-ellipsis">
-                <span>{convertToInternationalNumber(video.statistics?.viewCount)} views</span>
-                <span>•</span>
+                {video.statistics?.viewCount && (
+                  <>
+                    <span>{convertToInternationalNumber(video.statistics?.viewCount)} views</span>
+                    <span>•</span>{" "}
+                  </>
+                )}
                 <span>{calculateAge(video.snippet?.publishedAt)}</span>
               </div>
             </div>

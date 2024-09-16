@@ -80,7 +80,6 @@ a {
     background: var(--highlight-light-bg);
 }
 
-
 .btn-icon .icon {
     fill: currentColor;
     height: 100%;
@@ -92,7 +91,6 @@ a {
     aspect-ratio: 1;
     margin: 20% 0;
 }
-
 
 .subscribe button {
     height: 40px;
@@ -115,6 +113,15 @@ a {
 
 .subscribe button.unsubscribe:hover {
     background: var(--highlight-light-bg);
+}
+
+.fix-scroll {
+    overflow: auto;
+    height: 100%;
+}
+
+.bold {
+    font-weight: 500;
 }
 
 

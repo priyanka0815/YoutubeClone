@@ -8,3 +8,4 @@ export { default as HeaderRight } from "./HeaderRight";
 export { default as TopCategory } from "./TopCategory";
 export { default as VideoCard } from "./VideoCard";
 export { default as Loading } from "./Loading";
+export { default as PlayListCard } from "./PlayListCard";

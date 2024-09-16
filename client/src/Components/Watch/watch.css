@@ -175,10 +175,6 @@
     color: var(--link-blue)
 }
 
-#watch_page #video_detail p.bold {
-    font-weight: 500;
-}
-
 #watch_page #video_detail .toggle-btn {
     font-size: 90%;
     border-radius: 2px;

@@ -1,3 +1,5 @@
+import { API } from "./api";
+
 export const parseDuration = (duration) => {
   const match = duration?.match(/^P((?<day>\d+)D)?T((?<hour>\d+)H)?((?<minute>\d+)M)?((?<second>\d+)S)?$/),
     group = match?.groups;
@@ -140,4 +142,60 @@ export const openConsentScreen = () => {
 
   document.documentElement.append(form);
   form.submit();
+};
+
+export const formatVideoDescription = (text) => {
+  if (!text) return;
+
+  text = text.replaceAll(
+    /https?:\/\/(?:www\.)?[^\s/$.?#].[^\s]*\??[^\s#]*#?[^\s]*/gi,
+    (url) => `<a href={${url}} >${url.substr(0, 50) + (url.length > 50 && "...")}</a>`
+  );
+
+  text = text.replaceAll("\n", "<br />");
+
+  return text;
+};
+
+export const fetchSubscribe = async (ytContextData, channelId) => {
+  if (!ytContextData.googleAuth) return;
+
+  const data = await API.getSubscription({
+    body: constructQueryFromObj({ mine: true, forChannelId: channelId }),
+    authorization: `${ytContextData.googleAuth.tokenType} ${ytContextData.googleAuth.accessToken}`,
+  });
+
+  return data;
+};
+
+export const addSubscription = async (ytContextData, channelId) => {
+  if (!ytContextData?.googleAuth?.tokenType || !channelId) return;
+
+  const data = await API.addSubscription({
+    body: {
+      part: "snippet",
+      snippet: {
+        resourceId: {
+          kind: "youtube#subscription",
+          channelId: channelId,
+        },
+      },
+    },
+    authorization: `${ytContextData.googleAuth.tokenType} ${ytContextData.googleAuth.accessToken}`,
+  });
+
+  return data;
+};
+
+export const removeSubscription = async (ytContextData, subscriptionId) => {
+  if (!ytContextData.googleAuth.tokenType || !subscriptionId) return;
+
+  const data = await API.removeSubsciption({
+    body: {
+      id: subscriptionId,
+    },
+    authorization: `${ytContextData.googleAuth.tokenType} ${ytContextData.googleAuth.accessToken}`,
+  });
+
+  return data;
 };

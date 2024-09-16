@@ -11,6 +11,12 @@ export const SERVICE_URL = {
     query: true,
     tag: "getChannelInfo",
   },
+  getChannelSectionDetails: {
+    url: `https://www.googleapis.com/youtube/v3/channelSections?key=${import.meta.env.VITE_API_KEY}&`,
+    mehod: "get",
+    query: true,
+    tag: "getChannelSections",
+  },
   getVideoComments: {
     url: `https://www.googleapis.com/youtube/v3/commentThreads?key=${import.meta.env.VITE_API_KEY}&`,
     method: "get",
@@ -71,6 +77,18 @@ export const SERVICE_URL = {
     method: "get",
     query: true,
     tag: "searchVideos",
+  },
+  getPlayList: {
+    url: `https://www.googleapis.com/youtube/v3/playlists?key=${import.meta.env.VITE_API_KEY}&`,
+    method: "get",
+    query: "true",
+    tag: "playList",
+  },
+  getPlayListItems: {
+    url: `https://www.googleapis.com/youtube/v3/playlistItems?key=${import.meta.env.VITE_API_KEY}&`,
+    method: "get",
+    query: "true",
+    // tag: "playListItems",
   },
   getAllProducts: { url: "/getproducts", method: "GET", tag: "loadProducts" },
   getProductsByCategory: { url: "/getproductbycategory", method: "GET", query: true, tag: "loadProducts" },
