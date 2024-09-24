@@ -245,6 +245,11 @@ header .logo svg {
     font-size: 15px;
 }
 
+#menubar .menu li .link {
+    cursor: pointer;
+}
+
+#menubar .menu li .link:hover,
 #menubar .menu li a:hover,
 #menubar .menu li a.active {
     background: #ffffff1a;

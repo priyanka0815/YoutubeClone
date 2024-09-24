@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { menuBar, TopCategories } from "./siteData";
 
 const YtContext = createContext();
 const YTProvider = ({ children }) => {
@@ -19,6 +20,8 @@ const YTProvider = ({ children }) => {
       }
     }
   }
+
+  contextData.siteBarData = menuBar;
 
   const [data, setData] = useState(contextData);
 
