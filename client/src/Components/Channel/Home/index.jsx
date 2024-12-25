@@ -5,7 +5,6 @@ import {
   calculateAge,
   constructQueryFromObj,
   convertToInternationalNumber,
-  fetchSubscribe,
   formatVideoDescription,
 } from "../../../utils/functions";
 import { API } from "../../../utils/api";
@@ -15,7 +14,6 @@ import { useYtContext } from "../../../utils/YTContext";
 
 const Home = () => {
   const [channelDetails] = useOutletContext();
-  const [ytContextData] = useYtContext();
   const [playlistsInfo, setPlayListsInfo] = useState();
   const [channelsInfo, setChannelsInfo] = useState();
   const [sectionsData, setSectionsData] = useState([]);
@@ -66,7 +64,7 @@ const Home = () => {
 
     const fetchChannels = async (ids) => {
       const response = await API.getChannelDetails(
-        constructQueryFromObj({ part: "snippet,statistics", id: [...ids].join(",") })
+        constructQueryFromObj({ part: "snippet,statistics", id: [...ids].slice(0, 10).join(",") })
       );
 
       if (response.isError) {
@@ -82,6 +80,7 @@ const Home = () => {
         await fetchPlayLists(processedIds.playlist);
       }
       if (processedIds.channels) {
+        console.log(processedIds.channels);
         await fetchChannels(processedIds.channels);
       }
     };

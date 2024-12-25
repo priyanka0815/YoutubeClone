@@ -5,7 +5,7 @@ import { TopCategories } from "../../utils/siteData";
 import { TopCategory, VideoCard } from "../inc";
 import { API } from "../../utils/api";
 
-const index = () => {
+const Home = () => {
   const [videos, setVideos] = useState([]);
   const [channelsDetail, setChannelsDetail] = useState(new Map());
 
@@ -63,4 +63,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;

@@ -64,7 +64,6 @@ const ChannelDashboard = () => {
       if (data && !data.isError) {
         if (data.items.length > 0) {
           // subscribed to channel
-          console.log("Subscribed");
           setChannelDetails((prevChannelDetails) => ({
             ...prevChannelDetails,
             isSubscribed: true,

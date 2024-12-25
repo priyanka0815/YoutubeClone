@@ -113,7 +113,8 @@ section.channel-home-section #unsubscribe_trailer .video-detail p a {
 
 .channel-home-section .card-container .channel-card {
     text-align: center;
-    width: 200px;
+    width: calc(100% / var(--max-elem, 1));
+    flex-shrink: 0;
 }
 
 .channel-home-section .card-container .channel-logo {
