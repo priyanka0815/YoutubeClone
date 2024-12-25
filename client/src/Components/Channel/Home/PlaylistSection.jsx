@@ -28,7 +28,7 @@ const PlaylistSection = (props) => {
     const fetchPlayListData = async () => {
       const response = await API.getPlayListItems(
         constructQueryFromObj({
-          part: "snippet,contentDetails",
+          part: "snippet,contentDetails,status",
           playlistId: props.id,
           maxResults: 50,
         })
@@ -39,7 +39,7 @@ const PlaylistSection = (props) => {
         return;
       }
 
-      setPlayListItem(response.items);
+      setPlayListItem(response.items?.filter((item) => item.status.privacyStatus != "private"));
     };
 
     if (props.id) {

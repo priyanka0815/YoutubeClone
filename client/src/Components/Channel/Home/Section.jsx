@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { PlayIcon } from "../../../utils/Icons";
 
 const Section = (props) => {
+  if (props.cardData.length == 0) return;
+
   return (
     <section className={`channel-home-section ${props.className ?? ""}`}>
       <div className="section-header">
