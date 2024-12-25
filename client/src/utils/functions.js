@@ -149,7 +149,7 @@ export const formatVideoDescription = (text) => {
 
   text = text.replaceAll(
     /https?:\/\/(?:www\.)?[^\s/$.?#].[^\s]*\??[^\s#]*#?[^\s]*/gi,
-    (url) => `<a href={${url}} >${url.substr(0, 50) + (url.length > 50 && "...")}</a>`
+    (url) => `<a href={${url}} >${url.substr(0, 50) + (url.length > 50 ? "..." : "")}</a>`
   );
 
   text = text.replaceAll("\n", "<br />");
