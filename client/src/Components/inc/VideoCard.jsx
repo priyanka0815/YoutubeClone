@@ -45,7 +45,13 @@ const VideoCard = ({ video, ...props }) => {
       <div className="info">
         {(props.isLogoAllowed == undefined || props.isLogoAllowed) && (
           <div className="channel-logo">
-            <Link to={`/${channelDetail.customUrl}`}>
+            <Link
+              to={
+                channelDetail.customUrl
+                  ? `/${channelDetail.customUrl}`
+                  : `/channel/${channelDetail.channelId ?? video.snippet?.channelId}`
+              }
+            >
               <img
                 src={`${channelDetail.thumbnails?.default.url}`}
                 alt={channelDetail.title ?? video.snippet?.channelTitle}
