@@ -80,7 +80,6 @@ const Home = () => {
         await fetchPlayLists(processedIds.playlist);
       }
       if (processedIds.channels) {
-        console.log(processedIds.channels);
         await fetchChannels(processedIds.channels);
       }
     };

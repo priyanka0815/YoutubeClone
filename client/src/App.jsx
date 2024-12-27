@@ -6,6 +6,7 @@ import { Header, Sidebar } from "./Components/inc";
 import Home from "./Components/Home";
 import WatchPage from "./Components/Watch";
 import Verify from "./Components/Verify";
+import SubscriptionPage from "./Components/Subscription";
 import { YTProvider } from "./utils/YTContext";
 import { ChannelDashboard, ChannelHome, ChannelPlayList, ChannelVideos } from "./Components/Channel";
 
@@ -22,6 +23,14 @@ const App = () => {
             <Routes>
               <Route path="/">
                 <Route index element={<Home />} />
+
+                <Route path="/feed/subscriptions" element={<SubscriptionPage />} />
+
+                <Route path="/watch" element={<WatchPage />} />
+
+                <Route path="/account/">
+                  <Route path="verify" element={<Verify />} />
+                </Route>
 
                 <Route path=":handle" element={<ChannelDashboard />}>
                   <Route index element={<ChannelHome />} />
@@ -40,11 +49,6 @@ const App = () => {
                   <Route path="playlist" element={<ChannelPlayList />} />
                   <Route path="community" element={<ChannelVideos />} />
                 </Route>
-              </Route>
-
-              <Route path="/watch" element={<WatchPage />} />
-              <Route path="/account/">
-                <Route path="verify" element={<Verify />} />
               </Route>
             </Routes>
           </main>

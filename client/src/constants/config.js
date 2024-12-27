@@ -11,6 +11,13 @@ export const SERVICE_URL = {
     query: true,
     tag: "getChannelInfo",
   },
+  getMyChannel: {
+    url: `https://www.googleapis.com/youtube/v3/channels?key=${import.meta.env.VITE_API_KEY}&mine=true&`,
+    method: "get",
+    query: true,
+    tag: "my-channel",
+    authorization: true,
+  },
   getChannelSectionDetails: {
     url: `https://www.googleapis.com/youtube/v3/channelSections?key=${import.meta.env.VITE_API_KEY}&`,
     mehod: "get",
@@ -39,9 +46,18 @@ export const SERVICE_URL = {
   },
   getSubscription: {
     url: `https://www.googleapis.com/youtube/v3/subscriptions?key=${import.meta.env.VITE_API_KEY}&`,
-    mehod: "get",
+    method: "get",
     query: true,
     tag: "getSubscription",
+    authorization: true,
+  },
+  getMySubscriptionOnly: {
+    url: `https://www.googleapis.com/youtube/v3/subscriptions?key=${
+      import.meta.env.VITE_API_KEY
+    }&part=snippet,subscriberSnippet,contentDetails&mine=true&maxResults=50`,
+    method: "get",
+    query: true,
+    tag: "getMySubscriptionOnly",
     authorization: true,
   },
   addSubscription: {

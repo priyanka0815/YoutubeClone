@@ -4,7 +4,7 @@ import { MenuIcon, YtLogo } from "../../utils/Icons";
 import { useYtContext } from "../../utils/YTContext";
 
 // Display individual Menu Item
-const DisplayIconTitle = ({ icon, title, ...props }) => {
+const DisplayIconTitle = ({ icon, title }) => {
   return (
     <>
       {icon && <div className="icon">{icon}</div>}

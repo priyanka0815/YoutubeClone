@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { SignInUserIcon } from "../../utils/Icons";
 import { useYtContext } from "../../utils/YTContext";
 import { openConsentScreen } from "../../utils/functions";
