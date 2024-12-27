@@ -8,12 +8,10 @@ import {
   HistoryIcon,
   HomeIcon,
   LearningIcon,
-  LikeOutlinedIcon,
   LiveIcon,
   MoviesIcon,
   MusicIcon,
   NewsIcon,
-  PlayListIcon,
   PodcastsIcon,
   ReportHistoryIcon,
   SendFeedbackIcon,
@@ -54,7 +52,7 @@ export const sideBarLinks = [
   {
     icon: <SubscriptionIcon />,
     title: "Subscription",
-    link: "/subscription",
+    link: "/feed/subscriptions",
   },
   {
     icon: <YouIcon />,
@@ -95,11 +93,12 @@ export const menuBar = [
 
   {
     icon: <SubscriptionIcon />,
-    link: "/feed/subscription",
+    link: "/feed/subscriptions",
     title: "Subscriptions",
   },
 
   {
+    authRequired: true,
     title: (
       <>
         You <ArrowRight />
@@ -115,18 +114,12 @@ export const menuBar = [
       },
       {
         icon: <HistoryIcon />,
-        link: "https://www.youtube.com/feed/history",
+        link: "/feed/history",
         title: "History",
       },
       {
-        icon: <PlayListIcon />,
-        link: "/feed/playlist",
-        title: "Playlist",
-      },
-      // TODO: Update Channel Link
-      {
         icon: <YourVideosIcon />,
-        link: "https://studio.youtube.com/channel/{CHANNEL_VIDEO}/videos",
+        link: "/channel/.../videos",
         title: "Your Videos",
       },
       {
@@ -134,16 +127,24 @@ export const menuBar = [
         link: "/playlist?list=WL",
         title: "Watch later",
       },
-      {
-        icon: <LikeOutlinedIcon />,
-        link: "/playlist?list=LL",
-        title: "Liked Videos",
-      },
     ],
 
+    blockInfo: {
+      maxItems: 4,
+      collapse: {
+        title: "Show More",
+        icon: <CaretDown />,
+      },
+      expand: {
+        title: "Show fewer",
+        icon: <CaretUp />,
+      },
+    },
   },
 
   {
+    authRequired: true,
+    key: "subscription",
     title: "Subscriptions",
     isBlock: true,
     blockItems: [
